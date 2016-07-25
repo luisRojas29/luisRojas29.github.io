@@ -1,0 +1,72 @@
+body{
+    background: #C4DFE6;
+}
+
+.container{
+    border-radius: 5px;
+    max-width: 65%;
+    margin: 1% auto;
+    background: #2988BC;
+    text-align: center;
+}
+
+.cnt-header{
+    background: url("imgs/background.jpg");
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right:3px solid #F4EADE;
+    border-bottom:3px solid #F4EADE;
+    border-left:3px solid #F4EADE;
+    color: white;
+    padding: 20px 5px 0 20px;
+    font-family: 'Source Code Pro', cursive;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.cnt-header-cite{
+    clear: right;
+    margin-bottom:20px;
+    overflow: hidden;
+    padding-right: 25px;
+}
+
+.cnt-header-cite blockquote{
+    font-family: 'Kalam', cursive;
+    margin-bottom:0;
+}
+
+.cnt-header-cite p{
+    float: right;
+    margin:0;
+}
+
+.cnt-menu{
+    background: #F4EADE;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 5px auto;
+    padding:10px;
+    width: 85%;
+}
+
+.cnt-menu ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.cnt-menu ul li{
+    background: #2988BC;
+    margin: 20px auto;
+}
+
+.cnt-menu ul li a{
+    height: 100%;
+    font-family: 'Comfortaa', cursive;
+    color: floralwhite;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+}
