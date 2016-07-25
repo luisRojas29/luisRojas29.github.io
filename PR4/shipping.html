@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+  </head>
+
+  <body>
+      
+      <div class="container-bill">
+        <a class="home" href="index.html"><i class="fa fa-home fa-2x"></i></a>
+
+        <form class="form-bill" action="#" method="post">
+          
+          <div id="billing">
+            <h2>Provide the billing information:</h2>
+            
+            <input class="first_name" type="text" required placeholder="FIRST NAME" />
+        
+            <input class="last_name" type="text" required placeholder="LAST NAME" />
+
+            <input class="address" type="text" required placeholder="ADDRESS" />
+
+            <input class="city" type="text" required placeholder="CITY" />
+
+            <input class="country" type="text" required placeholder="COUNTRY" />
+          </div>
+
+          <div id="shipping">        
+            <h2>Provide the shipping information:</h2>
+
+            <input class="first_name" type="text" required placeholder="FIRST NAME" />
+        
+            <input class="last_name" type="text" required placeholder="LAST NAME" />
+
+            <input class="address" type="text" required placeholder="ADDRESS" />
+
+            <input class="city" type="text" required placeholder="CITY" />
+
+            <input class="country" type="text" required placeholder="COUNTRY" />
+          </div>
+
+          <label for="warning">
+          	Check if you are sure that billing and shipping input data match.
+          </label>
+
+          <input type="checkbox">Yes, they do
+          <button type="submit" class="button button-block"/>Send Info</button>
+      
+        </form>
+
+      </div>
+  </body>
+</html>

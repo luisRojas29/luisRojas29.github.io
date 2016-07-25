@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body{
+	background: #F9F9FF;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+	border-radius: 2px;
+	display: inline-block;
+	height: auto;
+	width: 80%;
+}
+
+.product-row{
+	width: 100%;
+	height: auto;
+	clear: both;
+	overflow: hidden;
+}
+
+.product-wrap{
+	border: 1px solid #D55448;
+	box-sizing: border-box;
+	float: left;
+	font-family: Helvetica Neue , Helvetica, Arial, sans-serif;
+	height: auto;
+	width: 25%;
+}
+
+.product{
+}
+
+.product-add{
+	text-align: center;
+}
+
+.product-add .label-category{
+	background: #FFA557;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 3px;
+	text-decoration: none;
+}
+
+.product-img{
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.product-img img{
+	border-left:2px dashed #896E69;
+	border-right:2px dashed #896E69;
+	border-bottom:2px dashed #896E69;
+}
+
+.product-info h4{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.product-info ul{
+	margin: 3px 0;
+	list-style: none;
+	padding: 0;
+}
+
+.product-info ul li{
+	text-align: center;
+}
+
+.product-info ul li:last-child{
+	padding: 0 10px 10px;
+	text-align: justify;
+}
+
+.product-info ul li p{
+	margin-bottom: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.product-info ul li p.price{
+	font-style: italic;
+}
+
+.product-add{
+	margin: 10px auto;
+}
+
+.product-add p,
+.product-add button{
+	display: inline-block;
+}
+
+.product-add .product-qty{
+	width: 35px;
+}
+
+.button-add{
+	background: transparent;
+	border: 2px dashed #FFA557;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+}
+
+.button-add:hover{
+	background: #FFA557;
+}
+
+/* Cart Options */
+.cart-options{
+	background:  #896E69;
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+
+.cart-options .signup-login,
+.cart-options .sales,
+.cart-options .cart{
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
+
+.cart-options .signup-login{
+    text-align: left;
+}
+
+.cart-options .signup-login a{
+	margin-left:20px;
+	text-decoration: none;
+	color: white;
+}
+
+.cart-options .signup-login a:hover{
+	color: #FFA557;
+}
+
+.cart-options .cart{
+	font-size: 22px;
+    text-align: right;
+}
+
+.cart-options .cart a{
+	text-decoration: none;
+	color: #FFA557;
+}
+
+.cart-options .cart span {
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.cart-options .sales ul{
+	padding:0;
+}
+
+.cart-options .sales ul li{
+	display: inline;
+}
+
+.cart-options .sales ul li a{
+	color: #D5DD48;;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/* Cart Aside */
+
+.cart-aside{
+	display: inline-block;
+	vertical-align: top;
+	width: 19%;
+}
+
+.cart-aside h3{
+	text-align: center;
+}
+
+.cart-aside ul{
+	list-style: none;
+	text-align: center;
+	width: auto;
+	padding: 0;
+}
+
+.cart-aside ul li{
+	margin: 5px auto;
+}
+
+.cart-aside ul li a{
+	color: #D5DD48;
+	text-decoration: none;
+}
+
+.cart-aside .search-form{
+	text-align: center;
+	margin: 15px auto;
+}
+
+.cart-aside .banner-publicity{
+	text-align: center;
+}

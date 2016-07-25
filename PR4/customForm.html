@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Form</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="container-custom">
+		<a class="home" href="index.html"><i class="fa fa-home fa-2x"></i></a>
+		<div class="custom">
+			<h1>Please Log In</h1>
+			<form action="#">
+				<fieldset>
+					<label for="email">Email:</label>
+					<input type="email" placeholder="john@doe.com">
+				</fieldset>
+				
+				<fieldset>
+					<label for="password">Password:</label>
+					<input type="password">
+				</fieldset>
+				
+				<fieldset>
+					<label for="id">Choose your ID:</label>
+					<input type="range" id="id" min="1" max="10" value="0" step="1">
+				</fieldset>
+
+				<fieldset>
+					<input type="submit" class="button" value="Login">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

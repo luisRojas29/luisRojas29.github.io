@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Builder</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container-color">
+		<a class="home" href="index.html"><i class="fa fa-home fa-2x"></i></a>
+		<div class="color-builder">
+			<h3>Select RGB to create a color:</h3>
+
+			<form action="#">
+				<fieldset>
+					<label for="red">Red</label>
+					<input type="range" id="red" min="0" max="255" value="0"step="5">
+				</fieldset>
+
+				<fieldset>
+					<label for="green">Green</label>
+					<input type="range" id="green" min="0" max="255" value="0"step="5">
+				</fieldset>
+
+				<fieldset>
+					<label for="blue">Blue</label>
+					<input type="range" id="blue" min="0" max="255" value="0"step="5">
+				</fieldset>
+
+				<fieldset>
+					<label for="blue">Alpha</label>
+					<input type="range" id="alpha" min="0" max="1" value="0" step=".01">
+				</fieldset>
+
+				<fieldset>
+					<input type="text" placeholder="#">
+				</fieldset>
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>
