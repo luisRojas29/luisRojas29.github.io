@@ -1,0 +1,29 @@
+body {
+
+  background: $color-base;
+
+}
+
+h1, h2, h3 {
+
+  font-family: $font-primary;
+
+}
+
+h4, h5, h6 {
+
+  font-family: $font-secondary;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+input[name="tab"],
+[id^="check"],
+.card-input {
+  display: none;
+}

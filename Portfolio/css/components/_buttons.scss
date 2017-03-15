@@ -1,0 +1,130 @@
+.button {
+  @include size(32px, 120px);
+  @include fonts($font-secondary, 16px, null, 32px, center);
+
+  background    : $color-secondary;
+
+  border-radius: 2px;
+
+  cursor: pointer;
+
+  color: $white;
+
+  display: $ib;
+
+}
+
+.btn-basic {
+
+  box-shadow: 0px 2px 3px $color-text;
+
+  color         : $white;
+
+  &:hover {
+
+    background: transparent;
+
+    border: 1px dashed $color-secondary;
+
+    color: $color-secondary;
+
+  }
+
+  &:active {
+
+    border: 1px solid $color-text;
+
+    box-shadow: 0px 1px 5px $color-text;
+
+    color: $color-text;
+
+  }
+
+}
+
+.button-sm {
+
+  font-size: 12px;
+
+  width: 90px;
+
+}
+
+.button-md {
+
+  @include fonts(null, 18px, null, 36px, center);
+  @include size(36px, 150px);
+
+}
+
+.button-lg {
+
+  @include fonts(null, 22px, null, 40px, center);
+  @include size(40px, 240px);
+
+}
+
+.btn-btn {
+
+  background-color: $color-base;
+
+  border-radius: 50%;
+
+  color: $white;
+
+  height: 100px;
+
+  outline-style: none;
+
+  &:hover {
+
+    border : 2px double $white;
+
+    box-shadow: inset 5px 15px 5px $color-text;
+
+    outline-style: none;
+
+  }
+
+  &:active {
+
+    box-shadow: inset 15px 25px 10px $color-text;
+
+    outline-style: none;
+
+  }
+
+}
+
+.btn-a {
+  background: $color-secondary;
+
+  border-radius: 40px;
+
+  box-shadow: 0px 7px 1px $color-text;
+
+  color: $white;
+
+  margin-top: 0;
+
+  text-decoration: none;
+
+  &:hover {
+
+    margin-top: 2px;
+
+    box-shadow: 0px 4px 1px $color-text;
+
+  }
+
+  &:active {
+
+    border    : 4px solid $white;
+
+    box-shadow: 0px 1px 1px $color-text;
+
+    color: $color-text;
+
+  }
+
+}

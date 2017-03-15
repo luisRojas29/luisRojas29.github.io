@@ -1,0 +1,262 @@
+.tab-component{
+
+	display: $ib;
+
+	position: $rel;
+
+  vertical-align: top;
+
+  li {
+
+    label:hover{
+
+      color: $color-secondary;
+
+    }
+
+  }
+
+}
+
+.tabs-projects{
+
+  @include outsiders();
+
+  list-style: none;
+
+}
+
+.prjs-list{
+
+  @include transitions(border-width, .5s, linear);
+
+  border-bottom: 2px solid $color-secondary;
+
+	border-right: 5px solid transparent;
+
+  margin: 1em auto;
+
+  width: $max;
+
+  &:hover {
+
+    @include transitions(border-right-color, .5s, linear);
+
+    border-right-color: $color-secondary;
+
+  }
+
+  input {
+
+    display: none;
+
+  }
+
+}
+
+.lbl-prj{
+
+  @include fonts($font-secondary, 28px, null, center);
+
+  @include size($max, $max);
+
+  color: $color-text;
+
+  cursor: pointer;
+
+  display: $ib;
+
+	padding-top: .5em;
+
+	padding-right: 14px;
+
+}
+
+.prj-component{
+
+	display: $ib;
+
+  height: 550px;
+
+  vertical-align: middle;
+
+}
+
+.carousel-container{
+
+  @include size(550px, $max);
+
+  border: 1px solid $color-secondary;
+
+  font-family: $font-secondary;
+
+  position:$rel;
+
+}
+
+.carousel-container i {
+
+  cursor: pointer;
+
+}
+
+.carousel-ctrls{
+
+  bottom:0;
+
+  margin: 0 35% 1em;
+
+  padding-left: 0;
+
+	position:$abs;
+
+	text-align: center;
+
+  width: 30%;
+
+  li {
+
+    margin: 0;
+
+  }
+
+}
+
+.tabs{
+
+  display:$in;
+
+  margin-right: 1em;
+
+}
+
+.img-carousel{
+
+  @include transitions(visibility, 0s, linear);
+  @include transitions(opacity, 0.5s, linear);
+
+  height: 0;
+
+  opacity: 0;
+
+  position: relative;
+
+  text-align: center;
+
+  visibility: hidden;
+}
+
+.left1, .right1,
+.left2, .right2,
+.left3, .right3{
+
+  display: $ib;
+
+  margin: auto 1em;
+
+  vertical-align: middle;
+
+}
+
+.carousel-content {
+  @include size(500px, 500px);
+
+  display: $ib;
+
+  vertical-align: middle;
+
+  p {
+
+    margin-top: 20%;
+
+  }
+
+}
+
+.img-carou {
+  @include size($max, $max);
+
+  display: $ib;
+
+  vertical-align: middle;
+}
+
+.techs-wrap{
+  @include size(120px, 350px);
+
+  margin: 0 auto;
+
+  img{
+
+    @include size(100px, 100px);
+
+  }
+
+}
+
+.button-container {
+
+	max-width     : $max;
+
+	text-align    : center;
+
+	a {
+
+		color: $color-text;
+
+	  text-decoration: none;
+
+	}
+
+}
+
+.box{
+
+  height: auto;
+
+  margin: 2em auto;
+
+  width: $max;
+
+}
+
+.profile-container{
+
+  text-align: center;
+
+  width: 100%;
+
+}
+
+[id^="prj"]{
+
+  display: none;
+
+}
+
+@for $i from 1 through 4 {
+
+	@for $j from 1 through 7 {
+
+		#check#{$j}#{$i} {
+
+			&:checked ~ .img-carousel#{$i}{
+				height: auto;
+
+			  visibility: visible;
+
+			  opacity: 1;
+
+			}
+
+			&:checked ~ .carousel-ctrls li label[for=check#{$j}#{$i}]{
+
+				color: $color-secondary;
+
+			}
+
+		}
+
+	}
+
+}

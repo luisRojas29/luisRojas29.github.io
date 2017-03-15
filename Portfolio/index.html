@@ -4,63 +4,61 @@
 		<meta charset="UTF-8">
 		<title>Luis Rojas MD Portfolio</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link rel="stylesheet" href="style.css">
+		<!--<link rel="stylesheet" href="style.css">-->
+		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<input type="checkbox" id="show-menu">
 		<div id="fix-bar">
-			<div class="logo">
-				<p class="name">luis</p>
-				<span class="lname">Rojas</span>
-			</div>
 			<div class="push">
-
-				<a class="hamburguer" href="#nav">
+				<label class="hamburguer" for="show-menu">
 					<span></span>
 					<span></span>
 					<span></span>
 					<span></span>
-				</a>
+				</label>
 				<div class="search-box-mobile">
 					<input type="text" class="input-search" placeholder="Search">
 					<a href="#modalSearch" class="modal-search"><i class="fa fa-search"></i></a>
 				</div>
 			</div>
 		</div>
-		<nav>
-			<p class="name">luis</p>
-			<span class="lname">Rojas</span>
-			<div class="search-box">
-				<input type="text" class="input-search">
-				<label for="name"></label>
-				<a href="#modalSearch" class="modal-search"><i class="fa fa-search"></i></a>
-			</div>
-			<ul>
-				<li>
-					<a href="#about">A<span>bout</span></a>
-				</li>
-				<li>
-					<a href="#projects">P<span>rojects</span></a>
-				</li>
-				<li>
-					<a href="#skills">S<span>kills</span></a>
-				</li>
-				<li>
-					<a href="#contact">C<span>ontact</span></a>
-				</li>
+
+		<div id="nav">
+			<ul class="site-menu">
+				<li><a class="tgl-mnu" href="#about">About</a></li>
+				<li><a class="tgl-mnu" href="#projects">Projects</a></li>
+				<li><a class="tgl-mnu" href="#skills">Skills</a></li>
+				<li><a class="tgl-mnu" href="#contact">Contact</a></li>
 			</ul>
-		</nav>
+		</div>
 
 		<div class="container">
-			<div id="nav">
-				<ul class="site-menu">
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#contact">Contact</a></li>
+
+			<nav>
+				<p class="name">luis</p>
+				<span class="lname">Rojas</span>
+				<div class="search-box">
+					<input type="text" class="input-search">
+					<label for="name"></label>
+					<a href="#modalSearch" class="modal-search"><i class="fa fa-search"></i></a>
+				</div>
+				<ul>
+					<li>
+						<a href="#about">A<span>bout</span></a>
+					</li>
+					<li>
+						<a href="#projects">P<span>rojects</span></a>
+					</li>
+					<li>
+						<a href="#skills">S<span>kills</span></a>
+					</li>
+					<li>
+						<a href="#contact">C<span>ontact</span></a>
+					</li>
 				</ul>
-			</div>
+			</nav>
 			<div id="modalSearch" class="modalDialog">
 				<div>
 					<a href="#close" title="Close" class="close"><i class="fa fa-times-circle-o fa-2x"></i></a>
@@ -117,7 +115,7 @@
 					</div>
 
 					<div class="prj-component">
-						
+
 						<input type="radio" name="tab" id="prj1" checked>
 						<input type="radio" name="tab" id="prj2">
 						<input type="radio" name="tab" id="prj3">
@@ -846,7 +844,7 @@
 
 														<p>$<span class="price">329.99</span></p>
 
-														<p>With Wi-Fi 32GB Bluetooth 4.0 White & Silver MD532LL/A...</p>
+														<p>With Wi-Fi 32GB Bluetooth 4.0 White & Silver...</p>
 
 														</ul>
 													</div>
@@ -1057,5 +1055,19 @@
 			</footer>
 			</div> <!-- container -->
 			<script src="js/calculator.js" ></script>
+			<script>
+				var menu_btns = document.getElementsByClassName("tgl-mnu");
+				var menu_tgl = document.getElementById("show-menu");
+
+				for(var i=0; i<menu_btns.length; i++) {
+					menu_btns[i].addEventListener("click", function(e){
+						if( menu_tgl.checked ){
+							menu_tgl.checked = false;
+						}else{
+							menu_tgl.checked = true;
+						}
+					});
+				}
+			</script>
 		</body>
 	</html>

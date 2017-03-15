@@ -1,0 +1,58 @@
+.modalDialog{
+
+  @include transitions(opacity, 400ms, ease-in);
+  @include sides(51px, 0, 0, 0);
+
+  background: $color-base;
+
+  opacity:0;
+
+  pointer-events: none;
+
+  position: $fx;
+
+  z-index: 99999;
+
+  &:target {
+
+    opacity:1;
+
+    pointer-events: auto;
+
+  }
+
+  div {
+
+    overflow: hidden;
+
+  }
+
+  h1 {
+
+    color: $color-secondary;
+
+    margin-top: 2em;
+
+    text-align: center;
+
+  }
+
+}
+
+.close {
+
+  color: $color-text;
+
+  margin-right: 30%;
+
+  float: right;
+
+  font-size: 25px;
+
+  text-decoration: none;
+
+}
+
+div[class^="modalNote"] p{
+  @include fonts($font-primary, 24px, null, null, center);
+}

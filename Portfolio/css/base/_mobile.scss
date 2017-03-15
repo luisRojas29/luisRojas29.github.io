@@ -1,0 +1,425 @@
+@media (max-width: $min-end) {
+
+  .modalNote-mob {
+
+    display: $bck;
+
+  }
+
+  .modalNote-tablet, .modalNote-desktop {
+    display: none;
+  }
+
+  #about {
+    margin-top: 5em;
+  }
+
+  #projects{
+    width: 100%;
+  }
+
+  .prj-component {
+      height: 100%;
+      width: 100%;
+  }
+
+  .prj-container {
+    width: 100%;
+  }
+
+  .left1, .left2, .left3, .left4,
+  .right1, .right2, .right3, .right4,
+  #prj01, #prj02, #prj03, #prj04, #prj05, #prj06, #prj07 {
+    display: none;
+  }
+
+  .carousel-content {
+    width: 100%;
+  }
+
+  .button {
+      display: block;
+      margin: 8px auto;
+  }
+
+  #prj05 .img-carousel2 .img-carou {
+      margin-top: 15px;
+      height: 90%;
+      width: 90%;
+  }
+
+  #prj05 .img-carousel4 p {
+      margin-top: 15px;
+  }
+
+  #prj05 .img-carousel4 .img-carou {
+      height: 425px;
+      width: auto;
+  }
+
+  /*
+    /////PROJECTS
+  */
+
+  .table-skills {
+    width: $max;
+  }
+
+  .scale-dev {
+    width: 105px;
+
+    ul{
+      padding: 0;
+    }
+
+  }
+
+  .skills-dev ul {
+    margin-left: 0;
+
+    li{
+
+      > span {
+
+        margin-right: 10px;
+
+        width: 20px;
+      }
+
+      span::before {
+
+        right: -50px;
+
+      }
+
+      &:hover{
+
+        span::after{
+
+          content: "";
+
+          position: $abs;
+
+          right: 15px;
+
+          border-width: 5px;
+
+          border-style: solid;
+
+          border-color: $black transparent transparent transparent;
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+  .table-labels {
+
+    margin-top: 25px;
+
+    margin-left: 75px;
+
+    p {
+
+      margin-right: 20px;
+
+      width: 7px;
+
+    }
+
+  }
+
+  .skill-labels {
+
+    margin-top: 4em;
+
+    margin-right: 3.2em;
+
+    p {
+
+      @include size(0,0);
+
+      font-size: 14px;
+
+      line-height: 12px;
+
+      margin-right: 25px;
+
+    }
+
+  }
+
+
+  .contact-body, #contact-card {
+    @include size(415px, 350px);
+  }
+
+  .card{
+    .card-body {
+      margin: 2em 1em;
+    }
+  }
+
+  .card-footer {
+
+    .encyclopedia {
+      margin-left: 1em;
+    }
+
+    .social {
+      margin-right: 0;
+    }
+
+  }
+
+  .accordion {
+    li {
+
+      label{
+
+        background: #1C7293;
+
+        color: #9EB3C2;
+
+      }
+
+      div {
+        p:first-child{
+          color: #065A82;
+        }
+      }
+
+    }
+
+  }
+
+  input:checked + label{
+
+    background: #1B3B6F;
+
+    color: #FFFFFF;
+
+  }
+
+  .thumbnails {
+    ul {
+
+      li{
+
+        height: 35px;
+
+        display: block;
+
+        label {
+
+          img{
+
+            border: 1px solid black;
+
+            max-height: 100%;
+
+            max-width: 100%;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  footer {
+    background: $color-secondary;
+
+    p {
+      color: $color-text;
+    }
+
+  }
+
+}
+
+@media (min-width: 361px) {
+  #fix-bar, #nav {
+    display: none;
+  }
+
+  #prj05 {
+
+    .img-carousel4 {
+
+      .carousel-content{
+
+        p {
+          margin-top: 1%;
+        }
+
+      }
+
+      img {
+        height: 85%;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: 361px) and (max-width: 600px) {
+
+  .name {
+
+    font-size: 10px;
+
+    float: left;
+
+  }
+
+  .lname {
+
+    font-size: 12px;
+
+    float: left;
+
+  }
+
+  .input-search {
+
+    width: 200px;
+
+  }
+
+  nav {
+
+    ul {
+
+      float: left;
+
+      padding: 0;
+
+      li {
+        margin: auto 10px;
+
+        a {
+          display: inherit;
+        }
+
+      }
+
+    }
+
+  }
+
+  .modalNote-mob, .modalNote-desktop {
+    display: none;
+  }
+
+  .modalNote-tablet {
+    display: block;
+  }
+
+  .table-skills {
+
+    width: 100%;
+
+  }
+
+  .scale-dev {
+
+    width: 105px;
+
+    ul{
+      padding: 0;
+    }
+
+  }
+
+  .skills-dev ul {
+
+    padding: 0;
+
+    li > span {
+
+      margin-right: 20px;
+
+      width: 40px;
+
+    }
+
+    li > span[class$="rnd"] {
+
+        margin-right: 30px;
+
+        width: 40px;
+
+    }
+
+  }
+
+  .table-labels {
+
+    margin-top: 20px;
+
+    margin-left: 125px;
+
+    p {
+
+      margin-right: 25px;
+
+      width: 30px;
+    }
+
+  }
+
+  .other-skills .table-labels {
+    margin-left: 120px;
+  }
+
+  .skill-labels {
+    margin-top: 4em;
+
+    margin-right: 3.2em;
+
+    p {
+      line-height: 12px;
+
+      margin-left: 30px;
+
+      margin-right: 7px;
+    }
+  }
+
+}
+
+@media (min-width:361px) and (max-width: 1024px) {
+
+    .thumbnails {
+
+      ul {
+
+        @include outsiders();
+
+        text-align: left;
+
+        height: auto;
+
+        li{
+
+            height: 65px;
+
+            display: block;
+
+        }
+
+      }
+
+    }
+
+}

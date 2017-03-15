@@ -1,0 +1,95 @@
+.thumbnails ul {
+
+  text-align: left;
+
+  margin: 0;
+
+  margin-top: 1em;
+
+  height: 100%;
+
+  padding: 0;
+
+  li{
+
+    height: 50px;
+
+    display: $bck;
+
+    label {
+
+      img {
+
+        border: 3px solid $black;
+
+        cursor: pointer;
+
+        max-height: 100%;
+
+        max-width: 100%;
+
+
+      }
+
+    }
+
+  }
+
+}
+
+input[name="car"] {
+
+  display: none;
+
+}
+
+.car-img{
+  @include size($max, $max);
+}
+
+.mustang,
+.audi1,
+.bmw,
+.audi2,
+.range{
+
+  @include sides(0, null, null, 0);
+
+  @include transitions(visibility, 0s, ease-in);
+
+  @include transitions(opacity, 1s, ease-in);
+
+  position:$abs;
+
+  z-index: -1;
+
+  visibility: hidden;
+  
+  opacity: 0;
+
+}
+
+#mustang:checked ~ div .mustang{
+  visibility: visible;
+  opacity: 1;
+}
+
+#audi1:checked ~ div .audi1{
+  visibility: visible;
+  opacity: 1;
+}
+
+#bmw:checked ~ div .bmw{
+  visibility: visible;
+  opacity: 1;
+}
+
+#audi2:checked ~ div .audi2{
+  visibility: visible;
+  opacity: 1;
+}
+
+#range:checked ~ div .range{
+  visibility: visible;
+  opacity: 1;
+}
