@@ -125,7 +125,7 @@
 						<input type="radio" name="tab" id="prj7">
 
 						<label for="prj-mob-1" class="lbl-prj-mob">Buttons</label>
-						<input type="checkbox" name="mob" id="prj-mob-1">
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-1">
 						<div class="prj-container" id="prj01">
 							<div class="carousel-container">
 
@@ -215,7 +215,7 @@
 						</div>
 
 						<label for="prj-mob-2" class="lbl-prj-mob">Profile sidebar</label>
-						<input type="checkbox" name="mob" id="prj-mob-2">
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-2">
 						<div class="prj-container" id="prj02">
 							<div class="carousel-container">
 
@@ -279,7 +279,7 @@
 						</div>
 
 						<label for="prj-mob-3" class="lbl-prj-mob">Forms</label>
-						<input type="checkbox" name="mob" id="prj-mob-3">
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-3">
 						<div class="prj-container" id="prj03">
 							<div class="carousel-container">
 
@@ -382,7 +382,7 @@
 						</div>
 
 						<label for="prj-mob-4" class="lbl-prj-mob">Accordion</label>
-						<input type="checkbox" name="mob" id="prj-mob-4">
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-4">
 						<div class="prj-container" id="prj04">
 							<div class="carousel-container">
 
@@ -507,7 +507,7 @@
 						</div>
 
 						<label for="prj-mob-5" class="lbl-prj-mob">Calculator</label>
-						<input type="checkbox" name="mob" id="prj-mob-5">
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-5">
 						<div class="prj-container" id="prj05">
 							<div class="carousel-container">
 
@@ -625,7 +625,7 @@
 						</div>
 
 						<label for="prj-mob-6" class="lbl-prj-mob">Image gallery</label>
-						<input type="checkbox" name="mob" id="prj-mob-6">
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-6">
 						<div class="prj-container" id="prj06">
 							<div class="carousel-container">
 
@@ -774,7 +774,7 @@
 						</div>
 
 						<label for="prj-mob-7" class="lbl-prj-mob">Shopping cart</label>
-						<input type="checkbox" name="mob" id="prj-mob-7">
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-7">
 						<div class="prj-container" id="prj07">
 							<div class="carousel-container">
 
@@ -1059,6 +1059,10 @@
 				var menu_btns = document.getElementsByClassName("tgl-mnu");
 				var menu_tgl = document.getElementById("show-menu");
 
+				var prj_btns = document.getElementsByClassName("lbl-prj-mob");
+				var prj_chcks = document.getElementsByClassName("chk-prj-mob");
+				var prj_tgl = false;
+
 				for(var i=0; i<menu_btns.length; i++) {
 					menu_btns[i].addEventListener("click", function(e){
 						if( menu_tgl.checked ){
@@ -1068,6 +1072,36 @@
 						}
 					});
 				}
+
+				for(var j=0; j<prj_btns.length; j++) {
+					prj_btns[j].addEventListener("click", function(e){
+						console.log("entro");
+						var for_chck = this.getAttribute("for");
+						var elm_box = document.getElementById(for_chck);
+
+						if( elm_box.checked ) {
+							elm_box.checked = false;
+							elm_box.click();
+						}else{
+							elm_box.checked = true;
+							elm_box.click();
+						}
+
+						for(var ind=0; ind<prj_chcks.length; ind++){
+							console.log(prj_chcks[ind] + "---" + for_chck);
+							if( prj_chcks[ind].id !== for_chck) {
+								if( prj_chcks[ind].checked ){
+									prj_chcks[ind].click();
+									prj_chcks[ind].checked = false;
+								}
+							}
+						}
+
+					});
+				}
+
+
 			</script>
+
 		</body>
 	</html>
