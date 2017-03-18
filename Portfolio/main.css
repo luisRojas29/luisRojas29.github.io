@@ -1668,6 +1668,12 @@ section {
     section {
       width: 600px !important; } }
 
+#about {
+  margin-top: 8em; }
+
+#contact {
+  margin-bottom: 8em; }
+
 #skills {
   text-align: center; }
 
