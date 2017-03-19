@@ -933,7 +933,7 @@ div[class^="modalNote"] p {
   -webkit-transition: all 600ms ease-in;
   -moz-transition: all 600ms ease-in;
   transition: all 600ms ease-in;
-  background: url(assets/bg2.png);
+  background: url(assets/bg2.png) no-repeat;
   color: #FFFFFF; }
 
 .card-title {
@@ -1412,13 +1412,13 @@ input[name="car"] {
 
 #nav {
   height: 100%;
-  left: 0;
+  width: 100%;
   background: #FBFBFB;
   border-right: 1px solid #D72C16;
+  display: none;
   overflow-y: scroll;
   position: absolute;
-  transform: translate3d(-100%, 0, 0);
-  transition: transform 0.5s ease; }
+  z-index: 1; }
   #nav a {
     padding-top: 14px;
     padding-right: 24px;
@@ -1429,16 +1429,16 @@ input[name="car"] {
     font-weight: 700;
     text-align: left;
     color: #333333;
-    display: block; }
+    border-bottom: 2px solid #D72C16;
+    display: block;
+    text-align: center; }
     #nav a:hover {
       background: #FBFBFB; }
   #nav:target {
     transform: translate3d(0, 0, 0); }
 
 .site-menu {
-  min-height: 100%;
-  padding-bottom: 60px;
-  position: relative; }
+  margin-top: 4em; }
   .site-menu label {
     display: inline-block; }
 
@@ -1457,7 +1457,7 @@ input[name="car"] {
   position: absolute;
   opacity: 0; }
   #show-menu:checked ~ #fix-bar .push {
-    transform: translate3d(180px, 0, 0); }
+    transform: translate3d(145px, 0, 0); }
   #show-menu:checked ~ #fix-bar .hamburguer span:nth-child(1), #show-menu:checked ~ #fix-bar .hamburguer span:nth-child(4) {
     top: 28px;
     right: 0;
@@ -1469,7 +1469,7 @@ input[name="car"] {
   #show-menu:checked ~ #fix-bar .hamburguer span:nth-child(3) {
     transform: rotate(-45deg); }
   #show-menu:checked ~ #nav, #show-menu:checked ~ .logo {
-    transform: translate3d(0, 0, 0); }
+    display: inherit; }
 
 nav {
   font-family: "Oswald", sans-serif;
@@ -1667,6 +1667,12 @@ section {
   @media (min-width: 361px) and (max-width: 600px) {
     section {
       width: 600px !important; } }
+  section:before {
+    display: block;
+    content: " ";
+    margin-top: -5em;
+    height: 5em;
+    visibility: hidden; }
 
 #about {
   margin-top: 8em; }
@@ -1955,7 +1961,7 @@ input[name="tab"],
 
   .lbl-prj-mob {
     background: #D72C16;
-    color: #333333;
+    color: #FFFFFF;
     display: block;
     font-family: "Open Sans Condensed", sans-serif;
     margin: 1px auto;

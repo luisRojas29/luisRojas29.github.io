@@ -249,7 +249,7 @@
   @include bg-size(cover);
   @include transitions(all, 600ms, ease-in);
 
-  background: url(assets/bg2.png);
+  background: url(assets/bg2.png) no-repeat;
 
   color: $white;
 }

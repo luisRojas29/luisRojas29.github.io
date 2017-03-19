@@ -169,21 +169,19 @@
 
 #nav {
 
-  @include size( $max, null );
-
-  @include sides( null, null, null, 0 );
+  @include size( $max, $max );
 
   background: $color-base;
 
   border-right: 1px solid $color-secondary;
 
+  display: none;
+
   overflow-y: scroll;
 
   position: $abs;
 
-  transform: translate3d(-100%, 0, 0);
-
-  transition: transform 0.5s ease;
+  z-index: 1;
 
   a {
 
@@ -193,7 +191,11 @@
 
     color: $color-text;
 
+    border-bottom: 2px solid $color-secondary;
+
     display: $bck;
+
+    text-align: center;
 
     &:hover {
 
@@ -213,11 +215,7 @@
 
 .site-menu {
 
-  min-height: $max;
-
-  padding-bottom: 60px;
-
-  position: $rel;
+  margin-top: 4em;
 
   label {
 
@@ -247,7 +245,7 @@
 
   &:checked ~ #fix-bar .push {
 
-    transform: translate3d(180px, 0, 0);
+    transform: translate3d(145px, 0, 0);
 
   }
 
@@ -275,7 +273,7 @@
   &:checked ~ #nav,
   &:checked ~.logo {
 
-    transform: translate3d(0,0,0);
+    display: inherit;
 
   }
 
