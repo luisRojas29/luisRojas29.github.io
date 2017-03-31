@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Components</title>
+    <!-- vendor css -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- component css  -->
+    <link rel="stylesheet" href="button.css">
+
+</head>
+<body>
+<main class="page-content">
+    <section id="ui-component-safety" class="ui-element-main">
+
+        <h1 class="main-ui-heading">Safety</h1>
+        <p class="main-element-description">Safety is button variation that let's you feel sure when you submitting something.</p>
+
+        <!-- Copy div.ui-element-container template for next UI-Element variation -->
+        <div class="ui-element-container">
+            <!-- UI-Element is to go below -->
+            <p>If you are really sure to submit your information, please hold the button for 3 seconds</p>
+            <button type="submit" class="btn-default btn-secondary" id="safety">
+                Send <span class="fa fa-anchor btn-icon"></span>
+            </button>
+            <div class="safety__count"></div>
+
+            <div class="alert alert__success safety__alert">
+                <p class="alert__text">Form submitted!!!</p>
+            </div>
+
+        </div>
+        <!-- Paste div.ui-element-container template for next UI-Element variation -->
+    </section>
+    <!-- If building more then one UI-Element, copy and paste entire section.ui-element-main and go to town!-->
+</main>
+<!-- script for code snippets to work. -->
+<script type="text/javascript" src="safety.js"></script>
+</body>
+</html>

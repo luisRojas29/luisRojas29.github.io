@@ -1,0 +1,92 @@
+.btn-default,
+.btn-sm {
+    margin:16px 4px;
+    border-radius: 3px;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    transition:box-shadow .3s;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(204,204,204,1);
+    box-shadow: 0px 3px 5px 0px rgba(204,204,204,1);
+}
+
+.btn-default {
+    height:45px;
+    min-width:120px;
+    padding:15px 34px;
+    position: relative;
+}
+.btn-sm {
+    height:40px;
+    max-width:110px;
+    padding:0 15px;
+    font-size:12px;
+}
+.btn-default:focus,
+.btn-sm:focus {
+    outline: 0;
+}
+.btn-default:hover,
+.btn-sm:hover,
+.btn-split:target {
+    cursor: pointer;
+    transition:box-shadow .3s;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(135,132,135,1);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(135,132,135,1);
+    box-shadow: 0px 4px 8px 0px rgba(135,132,135,1);
+}
+
+.btn-primary {
+    background:#51d0ef;
+}
+.btn-primary-sub {
+    background:#c3ced9;
+}
+.btn-secondary {
+    color:#51d0ef;
+    background:#edfafd;
+}
+.btn-secondary-sub {
+    color:#c3ced9;
+    background:#f3f5f7;
+}
+
+.btn-icon {
+    height:15px;
+    padding:0 5px;
+}
+.btn-round {
+    border-radius:22.5px;
+}
+.btn-center {
+    display:block;
+    margin:auto;
+}
+.btn-split {
+    margin:0;
+    border-radius:0;
+}
+.btn-anchor {
+    text-decoration:none;
+}
+
+.btn-icon {
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.safety__count {
+    background: #51d0ef;
+    color: #edfafd;
+    font-size: 14px;
+    border-radius: 10px;
+    display: inline-block;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+}
