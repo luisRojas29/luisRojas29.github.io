@@ -53,6 +53,32 @@ body {
     transform: rotateX(5deg) rotateY(40deg) translateX(20px) ;
 }
 
+.pop-tip-top::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 90px;
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: lightgray transparent;
+    display: block;
+    width: 0;
+}
+
+.pop-tip-bottom::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 90px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: lightgray transparent;
+    display: block;
+    width: 0;
+}
+
+
+
 .pop-over-info-title {
     background: darkgray;
     box-shadow: 0 1px 3px gray;
@@ -88,6 +114,12 @@ body {
     opacity: 1;
     -webkit-transform: rotateX(0deg) rotateY(0deg)  translateX(0) ;
     transform: rotateX(0deg) rotateY(0deg)  translateX(0) ;
+}
+
+.hide {
+    opacity: 0;
+    -webkit-transform: rotateX(20deg) rotateY(-40deg)  translateX(-40px) ;
+    transform: rotateX(20deg) rotateY(-40deg)  translateX(-40px) ;
 }
 
 .pop-over-info-title-text {
