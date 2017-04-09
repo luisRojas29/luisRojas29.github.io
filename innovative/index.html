@@ -7,77 +7,86 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="container">
-    14 March 1879 – 18 April 1955) was a German-born theoretical physicist. He developed the theory of relativity,
-    one of the two pillars of modern physics (alongside quantum mechanics).[1][5]:274 Einstein's work is also known for
-    its influence on the philosophy of science.[6][7] Einstein is best known in popular culture for his mass–energy
-    equivalence formula E = mc2 (which has been dubbed "the world's most famous equation").[8] He received the 1921
-    <div class="pop-over-3d">
-        Nobel Prize
-        <div class="pop-over-info init-position tr">
-            <div class="pop-over-info-title init-position tr"><p class="pop-over-info-title-text init-position tr">Nobel Prize <span class="close">X</span></p> </div>
-            <div class="pop-over-info-text init-position tr">Any of siz international prizes awarded annually for outstanding work in physics, chemistry, psychology or medicine,</div>
+<article class="evo_c-pop-up-3d__example">
+
+    <div>
+      14 March 1879 – 18 April 1955) was a German-born theoretical physicist. He developed the theory of relativity,
+      one of the two pillars of modern physics (alongside quantum mechanics).[1][5]:274 Einstein's work is also known for
+      its influence on the philosophy of science.[6][7] Einstein is best known in popular culture for his mass–energy
+      equivalence formula E = mc2 (which has been dubbed "the world's most famous equation").[8] He received the 1921
+    <div class="evo_c-pop-up-3d__trigger">
+      Nobel Prize
+      <div class="evo_c-pop-up-3d evo_h-init-position evo_h-transition">
+        <div class="evo_c-pop-up-3d__info-title evo_h-init-position evo_h-transition">
+          <p class="evo_c-pop-up-3d__info-title-text evo_h-init-position evo_h-transition">Nobel Prize <span class="evo_h-close">X</span></p>
         </div>
+        <div class="evo_c-pop-up-3d__paragraph evo_h-init-position evo_h-transition">
+          Any of six international prizes awarded annually for outstanding work in physics, chemistry, psychology or medicine.
+        </div>
+      </div>
     </div>
     in Physics "for his services to theoretical physics, and especially for his discovery of the law
-</div>
+  </div>
+
+</article>
 
 <script>
-    var appr = document.getElementsByClassName("pop-over-3d")[0];
-    var pop_bck = document.getElementsByClassName("pop-over-info")[0];
-    var pop_txt = document.getElementsByClassName("pop-over-info-text")[0];
-    var pop_title_bck = document.getElementsByClassName("pop-over-info-title")[0];
-    var pop_title_txt = document.getElementsByClassName("pop-over-info-title-text")[0];
-    var cls = document.getElementsByClassName("close")[0];
-    var loc = appr.getBoundingClientRect();
+    /* 3D POP UP COMPONENT */
+  var appr = document.getElementsByClassName("evo_c-pop-up-3d__trigger")[0];
+  var pop_bck = document.getElementsByClassName("evo_c-pop-up-3d")[0];
+  var pop_txt = document.getElementsByClassName("evo_c-pop-up-3d__paragraph")[0];
+  var pop_title_bck = document.getElementsByClassName("evo_c-pop-up-3d__info-title")[0];
+  var pop_title_txt = document.getElementsByClassName("evo_c-pop-up-3d__info-title-text")[0];
+  var cls = document.getElementsByClassName("evo_h-close")[0];
+  var loc = appr.getBoundingClientRect();
 
-    appr.addEventListener("click", function(e){
+  appr.addEventListener("click", function (e) {
 
-        pop_title_txt.removeEventListener("transitionend", removeTrans);
+    pop_title_txt.removeEventListener("transitionend", removeTrans);
 
-        if(loc.top < pop_bck.offsetHeight) {
-            pop_bck.style.top = "30px";
-            pop_bck.classList.add("pop-tip-top");
-        }else if(screen.height - loc.top < pop_bck.offsetHeight){
-            pop_bck.style.top = "-210px";
-            pop_bck.classList.add("pop-tip-bottom");
-        }
-
-        setTimeout(function(){
-            pop_bck.classList.add("show");
-            pop_txt.classList.add("show");
-            pop_title_bck.classList.add("show");
-            pop_title_txt.classList.add("show");
-        }, 500);
-
-    });
-
-    cls.addEventListener("click", function (e) {
-
-        setTimeout(function(){
-            pop_bck.classList.add("hide");
-            pop_txt.classList.add("hide");
-            pop_title_bck.classList.add("hide");
-            pop_title_txt.classList.add("hide");
-        }, 500);
-
-        pop_title_txt.addEventListener("transitionend", removeTrans);
-
-        e.stopPropagation();
-    });
-    
-    function removeTrans(e) {
-        if(e.propertyName !== 'transform') return;
-
-        pop_bck.classList.remove("show");
-        pop_txt.classList.remove("show");
-        pop_title_bck.classList.remove("show");
-        pop_title_txt.classList.remove("show");
-        pop_bck.classList.remove("hide");
-        pop_txt.classList.remove("hide");
-        pop_title_bck.classList.remove("hide");
-        pop_title_txt.classList.remove("hide");
+    if (loc.top < pop_bck.offsetHeight) {
+      pop_bck.style.top = "30px";
+      pop_bck.classList.add("evo_c-pop-up-3d__tip--top");
+    } else if (screen.height - loc.top < pop_bck.offsetHeight) {
+      pop_bck.style.top = "-210px";
+      pop_bck.classList.add("evo_c-pop-up-3d__tip--bottom");
     }
+
+    setTimeout(function () {
+      pop_bck.classList.add("evo_h-show");
+      pop_txt.classList.add("evo_h-show");
+      pop_title_bck.classList.add("evo_h-show");
+      pop_title_txt.classList.add("evo_h-show");
+    }, 500);
+
+  });
+
+  cls.addEventListener("click", function (e) {
+
+    setTimeout(function () {
+      pop_bck.classList.add("evo_h-hide");
+      pop_txt.classList.add("evo_h-hide");
+      pop_title_bck.classList.add("evo_h-hide");
+      pop_title_txt.classList.add("evo_h-hide");
+    }, 500);
+
+    pop_title_txt.addEventListener("transitionend", removeTrans);
+
+    e.stopPropagation();
+  });
+
+  function removeTrans(e) {
+    if (e.propertyName !== 'transform') return;
+
+    pop_bck.classList.remove("evo_h-show");
+    pop_txt.classList.remove("evo_h-show");
+    pop_title_bck.classList.remove("evo_h-show");
+    pop_title_txt.classList.remove("evo_h-show");
+    pop_bck.classList.remove("evo_h-hide");
+    pop_txt.classList.remove("evo_h-hide");
+    pop_title_bck.classList.remove("evo_h-hide");
+    pop_title_txt.classList.remove("evo_h-hide");
+  }
 
 </script>
 
