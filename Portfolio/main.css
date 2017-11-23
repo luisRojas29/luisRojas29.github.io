@@ -88,7 +88,8 @@ ul {
   border-radius: 2px;
   cursor: pointer;
   color: #FFFFFF;
-  display: inline-block; }
+  display: inline-block;
+  -webkit-appearance: none; }
 
 .btn-basic {
   box-shadow: 0px 2px 3px #333333;
@@ -1310,6 +1311,56 @@ input[name="car"] {
 .error {
   color: #7a190d; }
 
+.scroll-up {
+  bottom: 35px;
+  display: none;
+  position: fixed;
+  right: 35px;
+  z-index: 99; }
+
+.pinBar {
+  height: auto;
+  width: 45px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px dashed #D72C16;
+  border-left: none;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 100px; }
+  .pinBar ul li {
+    margin: 0 auto;
+    width: 3px;
+    border-bottom: 2px dashed #D72C16; }
+    .pinBar ul li:last-child {
+      border-bottom: none; }
+    .pinBar ul li p {
+      font-size: 11px;
+      line-height: 12px;
+      word-wrap: break-word; }
+
+.pinBar2 {
+  height: 30px;
+  width: 100%;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  background: #D72C16;
+  cursor: pointer;
+  position: absolute; }
+  .pinBar2 ul li {
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 3px 7px;
+    padding-right: 14px;
+    border-right: 2px dashed #000000; }
+    .pinBar2 ul li:last-child {
+      border-right: none; }
+
 #fix-bar {
   height: 60px;
   width: 100%;
@@ -1743,7 +1794,7 @@ input[name="tab"],
 
   .left1, .left2, .left3, .left4,
   .right1, .right2, .right3, .right4,
-  #prj01, #prj02, #prj03, #prj04, #prj05, #prj06, #prj07 {
+  #prj01, #prj02, #prj03, #prj04, #prj05, #prj06, #prj07, .pinBar, #toUp {
     display: none; }
 
   .carousel-content {

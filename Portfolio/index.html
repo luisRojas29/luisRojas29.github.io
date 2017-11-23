@@ -46,19 +46,20 @@
 				</div>
 				<ul>
 					<li>
-						<a href="#about">A<span>bout</span></a>
+						<a href="#about" data-scroll="about-title" class="scroll-title">A<span>bout</span></a>
 					</li>
 					<li>
-						<a href="#projects">P<span>rojects</span></a>
+						<a href="#projects" data-scroll="projects-title" class="scroll-title">P<span>rojects</span></a>
 					</li>
 					<li>
-						<a href="#skills">S<span>kills</span></a>
+						<a href="#skills" data-scroll="skills-title" class="scroll-title">S<span>kills</span></a>
 					</li>
 					<li>
-						<a href="#contact">C<span>ontact</span></a>
+						<a href="#contact" data-scroll="contact-title" class="scroll-title">C<span>ontact</span></a>
 					</li>
 				</ul>
 			</nav>
+
 			<div id="modalSearch" class="modalDialog">
 				<div>
 					<a href="#close" title="Close" class="close"><i class="fa fa-times-circle-o fa-2x"></i></a>
@@ -77,6 +78,17 @@
 					<p>This is 1024 min-width viewport.</p>
 				</div>
 			</div>
+
+            <div class="pinBar">
+                <ul>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Skills</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <button class="button btn-basic scroll-up" id="toUp">Go Top</button>
 
 			<section id="about">
 				<div class="about-title">
@@ -420,7 +432,7 @@
 									    	      <input type="checkbox" id="appetizers" name="acc" />
 									    	      <label for="appetizers">APPETIZERS</label>
 									    	      <div>
-									    	        <p>Check our tasty apps!</hp>
+									    	        <p>Check our tasty apps!</p>
 									    	        <p class="submenu">Happy hour menu - half off!!</p>
 									    	        <ul>
 									    	          <li>Chicken Wings (6) - 5.99$</li>
@@ -998,6 +1010,7 @@
 				</div>
 				<!-- /OTHER SKILLS -->
 			</section>
+
 			<section id="contact">
 				<div class="contact-title">
 					<h1>Contact</h1>
@@ -1055,6 +1068,8 @@
 			</footer>
 			</div> <!-- container -->
 			<script src="js/calculator.js" ></script>
+            <script src="js/sideBar.js"></script>
+			<script src="js/smoothScroll.js"></script>
 			<script>
 				var menu_btns = document.getElementsByClassName("tgl-mnu");
 				var menu_tgl = document.getElementById("show-menu");
