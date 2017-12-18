@@ -1,0 +1,33 @@
+.c-bio{
+    margin: 3% auto;
+    width: 45%;
+}
+
+.c-bio__subtitle{
+	font-family: $title-font;
+	font-size: 30px;
+  	margin:0;
+  	position: relative;
+	text-align: center;
+	text-shadow: 3px 3px 0px $main-color, 4px 4px 0px transparentize( $secondary-color, .2 );
+
+	&::before{
+		content:"";
+		display: block;
+		position: absolute;
+		z-index:-1;
+		top: 50%;
+		width: 60%;
+    	margin-left: 20%;
+		border-bottom: 3px solid $secondary-color;
+	}
+}
+
+.c-bio__content{
+	color: $secondary-color;
+  	font-family: $main-font;
+  	font-size: 30px;
+  	letter-spacing: 0.1em;
+  	margin:0;
+  	text-align: center;
+}

@@ -1,0 +1,15 @@
+.l-split{
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	width: 50%;
+}
+
+.l-split__left{
+}
+
+.l-split__right{
+	background: $detail-color;
+	z-index: -2;
+}

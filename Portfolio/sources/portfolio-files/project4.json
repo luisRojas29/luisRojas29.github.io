@@ -1,0 +1,12 @@
+{
+	"titulo": "Soccer Data API",
+	"descripcion" : "This is the front-end(On progress) for store all the historical information about the Mexican Football League",
+	"links":[
+		"https://luisrojas29.github.io/Portfolio/SoccerData.html"
+	],
+	"imgs":[
+		"/project3_1.png",
+		"/project3_2.png",
+		"/project3_3.png"
+	]
+}

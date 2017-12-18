@@ -1,0 +1,31 @@
+.c-carousel{
+	height: 200px;
+	position: relative;
+	width: 350px;
+
+	&__items{
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item{
+		height: 100%;
+		list-style: none;
+	}
+
+	&__btn{
+		background: lighten($main-color, 15%);
+		border: 0;
+		border-radius: 50%;
+		cursor: pointer;
+		bottom: 14px;
+		right: 14px;
+		position: absolute;
+	}
+
+	&__img{
+		@include size( 100% );
+	}
+}
+

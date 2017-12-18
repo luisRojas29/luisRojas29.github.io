@@ -1,0 +1,50 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+.c-para{
+	font-family: $text-font;
+}
+
+.c-title{
+	font-family: $title-font;
+  	margin:0;
+  	position: relative;
+	text-align: center;
+
+	&::before{
+		content:"";
+		display: block;
+		position: absolute;
+		z-index:-1;
+		top: 50%;
+		width: 100%;
+		border-bottom: 6px solid $secondary-color;
+	}
+
+	&-red{
+		text-shadow: 3px 3px 0px $main-color, 4px 4px 0px transparentize( $secondary-color, .2 );
+	}
+
+	&-white{
+		text-shadow: 3px 3px 0px $detail-color, 4px 4px 0px transparentize( $secondary-color, .2 );	
+	}
+}
+
+.c-main-title{
+
+	font-size: 48px;
+	font-family: $main-font;
+	margin: 14px;
+}
+
+.c-subtitle{
+	
+	font-size: 26px;
+	font-family: $main-font;
+	margin: 10px;
+}

@@ -1,0 +1,56 @@
+.c-louver {
+	position: absolute;
+
+	&--top {
+		@extend %u-full-wh;
+		background: $main-color;
+		transition: top 1.5s ease-in-out;
+	}
+
+	&--left {
+		@extend %u-full-wh;
+		background: $main-color;
+		transition: left 1.5s ease-in-out;
+		display: flex;
+	}
+
+	&--right {
+		@extend %u-full-wh;
+		background: $main-color;
+		text-align: center;
+		transition: right 1.5s ease-in-out;
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width:48em) {
+			flex-direction: row;
+		}
+	}
+
+	&__tgr {
+		@include size( 60px );
+	    border-radius: 50%;
+	    position: absolute;
+	    cursor: pointer;
+
+	    &--top{
+			background: $main-color;
+			bottom: -30px;
+	    }
+
+	    &--left{
+	    	background: $main-color;
+	    	padding: 15px 0;
+			right: -30px;	
+			text-align: center;
+	    }
+
+	    &--right{
+	    	background: $main-color;
+	    	padding: 15px 0;
+			left: -30px;	
+			text-align: center;	
+	    }
+	}
+
+}

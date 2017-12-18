@@ -1,0 +1,17 @@
+%u-full-wh {
+	height: 100%;
+	width: 100%;
+}
+
+%u-louver-before {
+	content: '';
+	cursor:pointer;
+	display: inline-block;
+}
+
+%u-trapezoid-down {
+
+	border-top:  25px solid $detail-color;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+}

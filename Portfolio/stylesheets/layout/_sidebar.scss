@@ -1,0 +1,19 @@
+.l-sidebar{
+	@include size(25%,  $height: 100%);
+	background: $bg-color;
+	display: flex;
+	flex-direction: column;
+	
+	&__box{
+		display: block;
+		text-align: center;
+		width: 100%;
+
+		img{
+			@include size(120px, 120px);
+			border-radius: 50%;
+			border: 5px solid white;
+			margin-top: 7px;
+		}
+	}
+}

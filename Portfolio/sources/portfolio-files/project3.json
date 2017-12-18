@@ -1,0 +1,12 @@
+{
+	"titulo": "Safety",
+	"descripcion" : "This is a simple but very useful button that makes sure when you are submitting/accepting something. You just have to hold it by n seconds you configurate.",
+	"links":[
+		"https://luisrojas29.github.io/Portfolio/safety.html"
+	],
+	"imgs":[
+		"/project4_1.png",
+		"/project4_2.png",
+		"/project4_3.png"
+	]
+}

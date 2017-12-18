@@ -1,0 +1,90 @@
+.c-social{
+	float: right;
+	text-align: center;
+}
+
+.c-social__link{
+	@include size( 60px );
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin: auto 14px;
+	padding-top: 10px;
+}
+
+.c-social__icon{
+	color: $main-color;
+}
+
+.c-social--effect:after{
+	@include size( 60px );
+	pointer-events: none;
+	position: absolute;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+.c-social--effect{
+	box-shadow: 0 0 0 4px $main-color;
+}
+
+.c-social--effect:after {
+	top: -4px;
+	left: -4px;
+	padding: 0;
+	z-index: 10;
+	border: 4px dashed $main-color;
+}
+
+.c-social--effect:before {
+	line-height: 92px;
+}
+
+.c-social--effect:hover {
+	box-shadow: 0 0 0 0 rgba(255,255,255,0);
+	color: #fff;
+}
+
+
+.c-social--effect:hover {
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+}
+
+.c-social--effect:hover:after {
+	-webkit-animation: spinAround 9s linear infinite;
+	-moz-animation: spinAround 9s linear infinite;
+	animation: spinAround 9s linear infinite;
+}
+
+@-webkit-keyframes spinAround {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spinAround {
+	from {
+		-moz-transform: rotate(0deg)
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
