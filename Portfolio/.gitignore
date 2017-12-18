@@ -4,3 +4,4 @@ sources/
 *.css.map
 README.md
 .metadata/
+.gitignore
