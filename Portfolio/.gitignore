@@ -1,0 +1,6 @@
+.sass-cache/
+sources/
+.scss-lint.yml
+*.css.map
+README.md
+.metadata/
