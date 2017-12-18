@@ -1,0 +1,194 @@
+@media (min-width: 601px) {
+
+  .modalNote-mob, .modalNote-tablet {
+    display: none;
+  }
+
+  .modalNote-desktop {
+    display: block;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 1024px){
+  nav {
+
+    background: $black;
+
+    border-bottom: 1px dashed $color-secondary;
+
+  }
+
+  .lname {
+    color: $color-text;
+  }
+
+  nav {
+
+    ul {
+
+      li {
+
+        a {
+
+          color: $color-text;
+        }
+
+      }
+
+    }
+
+  }
+
+  .modalNote-desktop {
+
+    display: inherit;
+
+  }
+
+  .input-search {
+
+    background-color: transparent;
+
+    border-bottom: 1px solid $color-text;
+
+  }
+
+  .search-box {
+
+    label::after {
+      color: $color-text;
+    }
+
+  }
+
+  footer {
+    background: $black;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .prj-component {
+
+      display: block;
+
+      height: $max;
+
+  }
+
+  .carousel-container {
+
+      height: $max;
+
+  }
+
+  .tab-component {
+
+    display: none;
+
+  }
+
+  .lbl-prj-mob {
+      background: $color-secondary;
+
+      color: $white;
+
+      display: block;
+
+      font-family: "Open Sans Condensed", sans-serif;
+
+      margin: 1px auto;
+
+      padding: 10px;
+
+      width: 85%;
+  }
+
+  @for $i from 1 through 7 {
+    #prj-mob-#{$i}:checked ~ #prj0#{$i}{
+      display: inherit;
+    }
+  }
+
+  #prj02 {
+
+    .img-carousel2 {
+      .carousel-content {
+        overflow-x: scroll;
+      }
+    }
+
+  }
+
+  #prj05 {
+
+    .img-carousel2 {
+
+      img {
+
+        @include size(auto, auto);
+
+      }
+
+    }
+
+    .img-carousel4 {
+
+      img {
+        width: auto;
+      }
+
+    }
+
+  }
+
+  #prj07 {
+
+    .img-carousel2 {
+      img {
+        height: auto;
+      }
+    }
+
+    .img-carousel3 {
+      img {
+        @include size(90%, 90%);
+      }
+    }
+  }
+
+  .accordion {
+
+    li {
+
+      label{
+
+        background: #88D498;
+
+        color: #114B5F;
+
+      }
+
+      div {
+
+        p:first-child{
+          color: #474A48;
+        }
+
+      }
+
+    }
+
+  }
+
+  input:checked + label{
+
+    background: #1A936F;
+
+    color: #EFF1ED;
+
+  }
+
+}

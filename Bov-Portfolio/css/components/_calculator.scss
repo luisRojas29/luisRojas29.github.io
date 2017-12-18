@@ -1,0 +1,178 @@
+.calc-wrap{
+
+  @include size(auto, 300px);
+
+  background: $white;
+
+  margin: 0 auto;
+
+  input {
+    border: 0;
+
+    display: block;
+
+    font-size: 30px;
+
+    text-align: right;
+
+    height: 50px;
+
+    width: 99%;
+
+  }
+
+}
+
+.calc-header{
+
+  background: #BBC3C6;
+
+  height: 60px;
+
+  padding-top: 15px;
+
+  i{
+    float: right;
+
+    margin-right: 10px;
+
+    color: $white;
+  }
+
+  h2{
+
+    color: $white;
+
+    display: $ib;
+
+    margin: 0 10px;
+  }
+
+  input{
+
+    @include size(50px, 99%);
+
+    border: 0;
+
+    display: $bck;
+
+  }
+
+}
+
+.resultado{
+
+  outline-style: none;
+
+}
+
+.btn-settings{
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.botones{
+
+  text-align: center;
+
+  padding: 5px;
+
+}
+
+.calc-button{
+  @include size(60px, 60px);
+  @include fonts(null, 25px, null, null, center);
+
+  background: $white;
+
+  border: 1px solid #BBC3C6;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  margin: 3px 4px;
+
+  &:hover {
+
+    border:2px solid #BBC3C6;
+
+  }
+
+  &:focus {
+
+    outline-style: none;
+
+  }
+
+}
+
+.num:active{
+  box-shadow: inset -6px -6px 6px 2px lighten($color-text, 35%);
+}
+
+.ac{
+  background: rgba(227,133,51, .7);
+
+  color: $white;
+
+  &:hover {
+
+      box-shadow: inset -6px -6px 6px 2px rgba(227,133,51, .8);
+
+  }
+
+  &:active {
+
+    box-shadow: inset -6px -6px 6px 2px rgba(227,133,51, 1);
+
+  }
+}
+
+.x{
+
+  background: lighten($color-secondary, 30%);
+
+  color: white;
+
+  &:hover {
+
+    box-shadow: inset -6px -6px 6px 2px lighten($color-secondary, 40%);
+
+  }
+
+  &:active {
+
+    box-shadow: inset -6px -6px 6px 2px $color-secondary;
+
+  }
+
+}
+
+.operations{
+  background: #EFEFEF;
+
+  &:hover {
+
+      background: gray;
+
+      color: white;
+
+  }
+
+}
+
+.equals{
+
+  background: $color-text;
+
+  color: $white;
+}
+
+.error{
+
+    color: darken($color-secondary, 20%);
+
+}

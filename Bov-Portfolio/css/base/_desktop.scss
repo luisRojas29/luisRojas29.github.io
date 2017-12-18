@@ -1,0 +1,75 @@
+@media (min-width: 1024px) {
+
+    .prj-container {
+
+      label {
+        /*display: inherit;*/
+      }
+
+    }
+
+    @for $i from 1 through 7{
+
+      #prj#{$i}:checked ~ #prj0#{$i} {
+        display: inherit;
+      }
+
+    }
+
+    #prj02 {
+
+      .img-carousel2 {
+
+        .carousel-content {
+          overflow-x: scroll;
+        }
+
+      }
+
+    }
+
+    #prj05 {
+
+      .img-carou {
+        width: auto;
+      }
+
+    }
+
+    .lbl-prj-mob  {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+  .accordion {
+
+    li {
+
+      label{
+
+        background: darken($color-base, 30%);
+
+        color: darken($color-base, 40%);
+
+      }
+
+      div {
+        p:first-child{
+          color: darken($color-text, 30%);
+        }
+      }
+
+    }
+
+  }
+
+  input:checked + label{
+
+    background: $color-base;
+
+    color: $color-text;
+
+    }
+
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Luckiest+Guy');
+
+body {
+    background: url("imgs/background.png") no-repeat;
+    background-size: cover;
+}
+
+.welcome, h2 {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+}
+
+.target {
+    display: inline-block;
+    width: 110px;
+    height: 95px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#hint, #reset{
+    display: none;
+}
+
+img {
+    float: left;
+}
+
+.container {
+    margin: 0 2em;
+}
+
+.game-side{
+    float: left;
+    width: 868px;
+}
+
+.stats-side {
+    background: rgba(160,23,88, .2);
+    color: white;
+    height: 600px;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 300px;
+}
+
+.stats-side fieldset {
+    font-size: 20px;
+    margin: 1em 14px;
+}
+
+.stats-side fieldset legend {
+    text-align: center;
+}
+
+.stats-side fieldset input {
+    margin-left: 7em;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+
+button {
+    background: rgba(255,255,255, .1 );
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin: 1em auto;
+    padding: 14px;   
+}
+
+.clock {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.puzzle {
+    background: url("imgs/_Puzzle_solved.png");
+    position: relative;
+    height: 579px;
+    width: 868px;
+}
+
+.puzzle_cell-container {
+    display: inline-block;
+    margin: 45px 0 0 40px;
+    height: 489px;
+    position: absolute;
+    width: 780px;
+}
+
+.box {
+    display: none;
+    padding: 2em;
+}
+
+.pop-up {
+    background: rgba(160,23,88, .9);
+    border: 5px solid white;
+    display: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 14px;
+    position: absolute;
+    width: 60%;
+    z-index: 99;
+}
+
+.pop-up_message {
+    color: white;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.pop-up_btn-box {
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
+
+.pop-up_btn {
+    display: inline-block;
+}

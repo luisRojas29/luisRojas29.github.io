@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Luis Rojas MD Portfolio</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!--<link rel="stylesheet" href="style.css">-->
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<input type="checkbox" id="show-menu">
+		<div id="fix-bar">
+			<div class="push">
+				<label class="hamburguer" for="show-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<div class="search-box-mobile">
+					<input type="text" class="input-search" placeholder="Search">
+					<a href="#modalSearch" class="modal-search"><i class="fa fa-search"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="nav">
+			<ul class="site-menu">
+				<li><a class="tgl-mnu" href="#about">About</a></li>
+				<li><a class="tgl-mnu" href="#projects">Projects</a></li>
+				<li><a class="tgl-mnu" href="#skills">Skills</a></li>
+				<li><a class="tgl-mnu" href="#contact">Contact</a></li>
+			</ul>
+		</div>
+
+		<div class="container">
+
+			<nav>
+				<p class="name">luis</p>
+				<span class="lname">Rojas</span>
+				<div class="search-box">
+					<input type="text" class="input-search">
+					<label for="name"></label>
+					<a href="#modalSearch" class="modal-search"><i class="fa fa-search"></i></a>
+				</div>
+				<ul>
+					<li>
+						<a href="#about" data-scroll="about-title" class="scroll-title">A<span>bout</span></a>
+					</li>
+					<li>
+						<a href="#projects" data-scroll="projects-title" class="scroll-title">P<span>rojects</span></a>
+					</li>
+					<li>
+						<a href="#skills" data-scroll="skills-title" class="scroll-title">S<span>kills</span></a>
+					</li>
+					<li>
+						<a href="#contact" data-scroll="contact-title" class="scroll-title">C<span>ontact</span></a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="modalSearch" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close"><i class="fa fa-times-circle-o fa-2x"></i></a>
+					<h1>Search temporarily disabled</h1>
+				</div>
+
+				<div class="modalNote-mob">
+					<p>This is 360 width viewport.</p>
+				</div>
+
+				<div class="modalNote-tablet">
+					<p>This is 600 width viewport.</p>
+				</div>
+
+				<div class="modalNote-desktop">
+					<p>This is 1024 min-width viewport.</p>
+				</div>
+			</div>
+
+            <div class="pinBar">
+                <ul>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Skills</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <button class="button btn-basic scroll-up" id="toUp">Go Top</button>
+
+			<section id="about">
+				<div class="about-title">
+					<h1>About</h1>
+					<h4 class="subtitle">Getting to know me</h4>
+				</div>
+
+				<div class="about-body">
+					<h1>Hello, I'm Luis and I'm from México</h1>
+					<p>
+						working hard to become a JS Developer... training at <a href="https://learn.moderndeveloper.com/"><span class="learn">Learn</span> <span class="modern">Modern Developer</span></a>
+					</p>
+					<p>
+						but also trying to make a better world using the web, so if you wanna join me, please be free to <a href="#contact" class="info-contact">talk to me!</a>
+					</p>
+				</div>
+			</section>
+
+			<section id="projects">
+				<div class="projects-title">
+					<h1>Projects</h1>
+					<h4 class="subtitle">These are the projects I developed while training at Modern Developer, I continue improving, so maybe next time I'll make you very surprised. </h4>
+				</div>
+
+				<div class="projects-body">
+					<div class="tab-component">
+						<ul class="tabs-projects">
+							<li class="prjs-list"><label class="lbl-prj" for="prj1">Buttons</label></li>
+							<li class="prjs-list"><label class="lbl-prj" for="prj2">Profile sidebar</label></li>
+							<li class="prjs-list"><label class="lbl-prj" for="prj3">Forms</label></li>
+							<li class="prjs-list"><label class="lbl-prj" for="prj4">Accordion</label></li>
+							<li class="prjs-list"><label class="lbl-prj" for="prj5">Calculator</label></li>
+							<li class="prjs-list"><label class="lbl-prj" for="prj6">Image gallery</label></li>
+							<li class="prjs-list"><label class="lbl-prj" for="prj7">Shopping cart</label></li>
+						</ul>
+					</div>
+
+					<div class="prj-component">
+
+						<input type="radio" name="tab" id="prj1" checked>
+						<input type="radio" name="tab" id="prj2">
+						<input type="radio" name="tab" id="prj3">
+						<input type="radio" name="tab" id="prj4">
+						<input type="radio" name="tab" id="prj5">
+						<input type="radio" name="tab" id="prj6">
+						<input type="radio" name="tab" id="prj7">
+
+						<label for="prj-mob-1" class="lbl-prj-mob">Buttons</label>
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-1">
+						<div class="prj-container" id="prj01">
+							<div class="carousel-container">
+
+								<input type="radio" name="port1" id="check11" checked/>
+								<div class="img-carousel img-carousel1">
+									<div class="left1">
+										<label for="check13"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<p>Everybody loves buttons, so these came out of my mind.</p>
+
+										<p>Technologies used:</p>
+										<div class="techs-wrap">
+											<img class="img-carou" src="imgs/html5_icon.png" alt="HTML5 icon">
+											<img class="img-carou" src="imgs/css_icon.png" alt="CSS icon">
+										</div>
+									</div>
+									<div class="right1">
+										<label for="check12"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port1" id="check12"/>
+								<div class="img-carousel img-carousel2">
+									<div class="left2">
+										<label for="check11"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<img src="imgs/buttons_scr.png" class="img-carou"/>
+									</div>
+									<div class="right2">
+										<label for="check13"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port1" id="check13"/>
+								<div class="img-carousel img-carousel3">
+									<div class="left3">
+										<label for="check12"><i class="fa fa-angle-left"></i></label>
+									</div>
+
+									<div class="carousel-content">
+									    <div class="button-container">
+
+											<div class="box">
+												<h3>A Basic Button</h3>
+										    	<div class="button btn-basic">Buy Now</div>
+											</div>
+
+											<div class="box">
+												<h3>A Button Element with the Button Class</h3>
+										        <button class="button">YES</button>
+											</div>
+
+											<div class="box">
+												<h3>An Anchor with a Button Class</h3>
+										        <a href="#" class="button">Search</a>
+											</div>
+
+											<div class="box">
+												<h3>Buttons of different sizes</h3>
+										        <div class="button btn-basic button-sm">Small Button</div>
+										        <div class="button btn-basic button-md">Medium Button</div>
+										        <div class="button btn-basic button-lg">Large Button</div>
+											</div>
+									    </div>
+									</div>
+
+									<div class="right3">
+										<label for="check11"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<ul class="carousel-ctrls">
+									<li class="tabs">
+										<label for="check11"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check12"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check13"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+						<label for="prj-mob-2" class="lbl-prj-mob">Profile sidebar</label>
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-2">
+						<div class="prj-container" id="prj02">
+							<div class="carousel-container">
+
+								<input type="radio" name="port2" id="check21" checked/>
+								<div class="img-carousel img-carousel1">
+									<div class="left1">
+										<label for="check22"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<p>Wanna get to know me a little more, here ya go, or just ask me. A little profile sidebar you can use to tell who you are.</p>
+
+										<p>Technologies used:</p>
+										<div class="techs-wrap">
+											<img src="imgs/html5_icon.png" alt="HTML5 icon">
+											<img src="imgs/css_icon.png" alt="CSS icon">
+										</div>
+									</div>
+									<div class="right1">
+										<label for="check22"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port2" id="check22"/>
+								<div class="img-carousel img-carousel2">
+									<div class="left2">
+										<label for="check21"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<div class="profile-container">
+
+										    <div class="profile">
+										        <div class="profile-head">
+										            <h2>luis <span>Rojas</span></h2>
+										            <div class="profile-img-main">
+										                <img src="imgs/yo.jpg" alt="Me">
+										            </div>
+										        </div>
+										        <div class="profile-body">
+										            <p>Hello, as you noticed my name is Luis, did you watch the animated movie Rango? I'm from the state of Durango, Mexico yes where the chamaleon finds it's name, in a little city called Gómez Palacio, I work as a developer in a private security company. </p>
+										            <p>The main reason I'm here is to master Javascript so I can create apps to solve social problems. Also I'm looking for partners who wanna help me using their hands for coding, their brains for ideas, but also their spirit for create a better world. That's the dream.So if you have a similiar idea, count with me.</p>
+										            <p>On the other hand I like t.v. series, anime, beer, family, friends, soccer, having a good conversation about anything, anywhere with anyone. So if you wanna talk about making a change in our world, or what's your favorite type of music, I'm all eyes. </p>
+										        </div>
+										    </div>
+										</div>
+									</div>
+									<div class="right2">
+										<label for="check21"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<ul class="carousel-ctrls">
+									<li class="tabs">
+										<label for="check21"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check22"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+						<label for="prj-mob-3" class="lbl-prj-mob">Forms</label>
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-3">
+						<div class="prj-container" id="prj03">
+							<div class="carousel-container">
+
+								<input type="radio" name="port3" id="check31" checked/>
+								<div class="img-carousel img-carousel1">
+									<div class="left1">
+										<label for="check33"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<p>We see forms everywhere, so here's are a little bit of my form-ation.</p>
+
+										<p>Technologies used:</p>
+										<div class="techs-wrap">
+											<img class="img-carou" src="imgs/html5_icon.png" alt="HTML5 icon">
+											<img class="img-carou" src="imgs/css_icon.png" alt="CSS icon">
+											<img class="img-carou" src="imgs/js_icon.png" alt="JS icon" >
+										</div>
+									</div>
+									<div class="right1">
+										<label for="check32"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port3" id="check32"/>
+								<div class="img-carousel img-carousel2">
+									<div class="left2">
+										<label for="check31"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<img src="imgs/forms_scr.png" class="img-carou"/>
+									</div>
+									<div class="right2">
+										<label for="check33"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port3" id="check33"/>
+								<div class="img-carousel img-carousel3">
+									<div class="left3">
+										<label for="check32"><i class="fa fa-angle-left"></i></label>
+									</div>
+
+									<div class="carousel-content">
+									    <div class="container-custom">
+											<div class="custom">
+												<h1>Log In</h1>
+												<form action="#" id="login">
+													<fieldset>
+
+														<div>
+															<i class="fa fa-envelope-o fa-2x"></i>
+														</div>
+
+														<input id="email" type="email" placeholder="email">
+													</fieldset>
+
+													<fieldset>
+														<div>
+															<i class="fa fa-eye fa-2x"></i>
+														</div>
+														<input id="pass" type="password" placeholder="password">
+													</fieldset>
+
+													<fieldset>
+														<div>
+															<i class="fa fa-key fa-2x"></i>
+														</div>
+														<input type="range" id="id" min="1" max="10" value="0" step="1">
+													</fieldset>
+
+													<fieldset>
+														<input type="submit" value="Let's Go">
+													</fieldset>
+												</form>
+									            <div class="errors">
+									                <ul class="list-errors"></ul>
+									            </div>
+											</div>
+										</div>
+									</div>
+
+									<div class="right3">
+										<label for="check31"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<ul class="carousel-ctrls">
+									<li class="tabs">
+										<label for="check31"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check32"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check33"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+						<label for="prj-mob-4" class="lbl-prj-mob">Accordion</label>
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-4">
+						<div class="prj-container" id="prj04">
+							<div class="carousel-container">
+
+								<input type="radio" name="port4" id="check41" checked/>
+								<div class="img-carousel img-carousel1">
+									<div class="left1">
+										<label for="check42"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<p>In Modern Developer we are assigned really good exercises to shape our CSS skilss.</p>
+
+										<p>Technologies used:</p>
+										<div class="techs-wrap">
+											<img class="img-carou" src="imgs/html5_icon.png" alt="HTML5 icon">
+											<img class="img-carou" src="imgs/css_icon.png" alt="CSS icon">
+										</div>
+									</div>
+									<div class="right1">
+										<label for="check42"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port4" id="check42"/>
+								<div class="img-carousel img-carousel2">
+									<div class="left3">
+										<label for="check41"><i class="fa fa-angle-left"></i></label>
+									</div>
+
+									<div class="carousel-content">
+									    <div class="container-custom">
+									    	<div class="accordion">
+									    	  <ul>
+									    	    <!-- Item 1 -->
+									    	    <li>
+									    	      <input type="checkbox" id="appetizers" name="acc" />
+									    	      <label for="appetizers">APPETIZERS</label>
+									    	      <div>
+									    	        <p>Check our tasty apps!</p>
+									    	        <p class="submenu">Happy hour menu - half off!!</p>
+									    	        <ul>
+									    	          <li>Chicken Wings (6) - 5.99$</li>
+									    	          <li>Calamari - 7.99$</li>
+									    	          <li>Garlic breaded pickles - 4.59$</li>
+									    	        </ul>
+									    	      </div>
+									    	    </li>
+
+									    	    <!-- Item 2 -->
+									    	    <li>
+									    	      <input type="checkbox" id="entrees" name="acc" />
+									    	      <label for="entrees">ENTREES</label>
+									    	      	<div>
+										    	      <p>Check from a wide range of pastas, combos and signature dishes.</p>
+										    	      <p class="submenu">Pastas</p>
+										    	      <ul>
+										    	        <li>Chicken Picatta - 14.99$</li>
+										    	        <li>Chicken Pollo - 12.99$</li>
+										    	        <li>Lasagna (Chicken/beef) - 10.99$</li>
+										    	      </ul>
+
+										    	      <p class="submenu">Combos</p>
+										    	      <ul>
+										    	        <li>Italian Sausage & Beef Combo - 15.99$</li>
+										    	        <li>Mac n Cheese with Chicken Tenders - 8.99$</li>
+										    	      </ul>
+									    	    	</div>
+									    	    </li>
+
+									    	    <!-- Item 3 -->
+									    	    <li>
+									    	      <input type="checkbox" id="desserts" name="acc" />
+									    	      <label for="desserts">DESSERTS</label>
+									    	      <div>
+									    	      <p>New Summer specials!!</p>
+									    	      <p class="submenu">Shakes and Ice Creams</p>
+									    	      <ul>
+									    	        <li>Turtle Caramel Shake - 6.99$</li>
+									    	        <li>Chocolate Brownie Bite - 4.99$</li>
+									    	      </ul>
+									    	      </div>
+									    	    </li>
+
+									    	    <li>
+									    	      <input type="checkbox" id="soups" name="acc" />
+									    	      <label for="soups">SOUPS & SALADS</label>
+									    	      <div>
+									    	      <p>Look what we have for you!!</p>
+									    	      <p class="submenu">Soups</p>
+									    	      <ul>
+									    	        <li>Tortilla soup - 4.99$</li>
+									    	        <li>Chicken soup - 5.87$</li>
+									    	      </ul>
+									    	      <p class="submenu">Salads</p>
+									    	      <ul>
+									    	        <li>Ceasar Salad - 3.99$</li>
+									    	        <li>BBQ Wings Salad - 8.68$</li>
+									    	      </ul>
+									    	      </div>
+									    	    </li>
+
+									    	  </ul>
+									    	</div>
+										</div>
+									</div>
+
+									<div class="right3">
+										<label for="check41"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<ul class="carousel-ctrls">
+									<li class="tabs">
+										<label for="check41"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check42"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<label for="prj-mob-5" class="lbl-prj-mob">Calculator</label>
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-5">
+						<div class="prj-container" id="prj05">
+							<div class="carousel-container">
+
+								<input type="radio" name="port5" id="check51" checked/>
+								<div class="img-carousel img-carousel1">
+									<div class="left1">
+										<label for="check54"><i class="fa fa-angle-left"></i></label>
+									</div>
+
+									<div class="carousel-content">
+										<p>All MD students, we were assigned to create a calculator with functionality, describing some validation exercises which every app should have. This was a little challenging because we need to use Vanilla Javascript.It was a great experience, let me know that anything can do with Js, it 	really don't need jQuery too much :P</p>
+
+										<p>Technologies used:</p>
+										<div class="techs-wrap">
+											<img class="img-carou" src="imgs/html5_icon.png" alt="HTML5 icon">
+											<img class="img-carou" src="imgs/css_icon.png" alt="CSS icon">
+											<img class="img-carou" src="imgs/js_icon.png" alt="JS icon" >
+										</div>
+									</div>
+
+									<div class="right1">
+										<label for="check52"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port5" id="check52"/>
+								<div class="img-carousel img-carousel2">
+									<div class="left2">
+										<label for="check51"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<img src="imgs/calculator_scr.png"  class="img-carou"/>
+									</div>
+									<div class="right2">
+										<label for="check53"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port5" id="check53"/>
+								<div class="img-carousel img-carousel3">
+									<div class="left3">
+										<label for="check52"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<div class="calc-container">
+
+											<div class="calc-wrap">
+												<div class="calc-header">
+													<h2>Calculator</h2>
+													<a href="#" class="btn-settings"><i class="fa fa-ellipsis-v fa-2x"></i></a>
+													<a href="#" class="btn-settings"><i class="fa fa-arrows-alt fa-2x"></i></a>
+												</div>
+												<input type="text" class="resultado" id="box">
+												<div class="botones">
+													<button id="ac" class="calc-button ac">AC</button>
+													<button class="calc-button operations">%</button>
+													<button class="calc-button operations">/</button>
+													<button id="erase" class="calc-button x"><i class="fa fa-toggle-left"></i></button>
+													<button class="calc-button num">7</button>
+													<button class="calc-button num">8</button>
+													<button class="calc-button num">9</button>
+													<button class="calc-button operations">*</button>
+													<button class="calc-button num">4</button>
+													<button class="calc-button num">5</button>
+													<button class="calc-button num">6</button>
+													<button class="calc-button operations">-</button>
+													<button class="calc-button num">1</button>
+													<button class="calc-button num">2</button>
+													<button class="calc-button num">3</button>
+													<button class="calc-button operations">+</button>
+													<button class="calc-button num">0</button>
+													<button id="point" class="calc-button">.</button>
+													<button class="calc-button">( )</button>
+													<button id="equal" class="calc-button equals">=</button>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="right3">
+										<label for="check54"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port5" id="check54"/>
+								<div class="img-carousel img-carousel4">
+									<div class="left2">
+										<label for="check53"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<p>Here's the calculator of my mobile which I inspired...</p>
+										<img src="imgs/calculator_inspiration.png"  class="img-carou"/>
+									</div>
+									<div class="right2">
+										<label for="check51"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<ul class="carousel-ctrls">
+									<li class="tabs">
+										<label for="check51"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check52"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check53"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check54"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<label for="prj-mob-6" class="lbl-prj-mob">Image gallery</label>
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-6">
+						<div class="prj-container" id="prj06">
+							<div class="carousel-container">
+
+								<input type="radio" name="port6" id="check61" checked/>
+								<div class="img-carousel img-carousel1">
+									<div class="left1">
+										<label for="check64"><i class="fa fa-angle-left"></i></label>
+									</div>
+
+									<div class="carousel-content">
+										<p>A gallery is generally used to show great things about a website, it is sayed that a picture worth more than thousand words.</p>
+										<div class="techs-wrap">
+											<img class="img-carou" src="imgs/html5_icon.png" alt="HTML5 icon">
+											<img class="img-carou" src="imgs/css_icon.png" alt="CSS icon">
+										</div>
+									</div>
+
+									<div class="right1">
+										<label for="check62"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port6" id="check62"/>
+								<div class="img-carousel img-carousel2">
+									<div class="left2">
+										<label for="check61"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<img src="imgs/gallery_scr.png"  class="img-carou"/>
+									</div>
+									<div class="right2">
+										<label for="check63"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port6" id="check63"/>
+								<div class="img-carousel img-carousel3">
+									<div class="left3">
+										<label for="check62"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<img src="imgs/gallery_2_scr.png"  class="img-carou"/>
+									</div>
+
+									<div class="right3">
+										<label for="check64"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port6" id="check64"/>
+								<div class="img-carousel img-carousel4">
+									<div class="left2">
+										<label for="check63"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<div class="gallery-container">
+
+											<div class="thumbnails">
+
+												<ul>
+
+													<li>
+														<label for="mustang">
+											        		<img src="https://static.pexels.com/photos/24353/pexels-photo.jpg" alt="Mustang" />
+											      		</label>
+													</li>
+
+													<li>
+														<label for="audi1">
+															<img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" alt="Audi" />
+														</label>
+													</li>
+
+													<li>
+														<label for="bmw">
+										  	        		<img src="https://static.pexels.com/photos/26796/pexels-photo.jpg" alt="Bmw" />
+										  	      		</label>
+													</li>
+
+													<li>
+														<label for="audi2">
+										  	        		<img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" alt="Audi2" />
+										  	      		</label>
+													</li>
+
+													<li>
+														<label for="range">
+										  	        		<img src="https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg" alt="Range Rover" />
+										  	      		</label>
+													</li>
+
+												</ul>
+
+											</div>
+
+												<input type="radio" name="car" id="mustang" checked/>
+												<input type="radio" name="car" id="audi1" />
+												<input type="radio" name="car" id="bmw" />
+												<input type="radio" name="car" id="audi2" />
+												<input type="radio" name="car" id="range" />
+												<div class="cars">
+													<div class="mustang">
+														<img class="car-img" src="https://static.pexels.com/photos/24353/pexels-photo.jpg" alt="Mustang" />
+													</div>
+
+													<div class="audi1">
+														<img class="car-img" src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" alt="Audi" />
+													</div>
+
+													<div class="bmw">
+														<img class="car-img" src="https://static.pexels.com/photos/26796/pexels-photo.jpg" alt="Bmw" />
+													</div>
+
+													<div class="audi2">
+														<img class="car-img" src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" alt="Audi" />
+													</div>
+
+													<div class="range">
+														<img class="car-img" src="https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg" alt="Range Rover" />
+													</div>
+
+												</div>
+
+										</div>
+									</div>
+									<div class="right2">
+										<label for="check61"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<ul class="carousel-ctrls">
+									<li class="tabs">
+										<label for="check61"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check62"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check63"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check64"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<label for="prj-mob-7" class="lbl-prj-mob">Shopping cart</label>
+						<input type="checkbox" name="mob" class="chk-prj-mob" id="prj-mob-7">
+						<div class="prj-container" id="prj07">
+							<div class="carousel-container">
+
+								<input type="radio" name="port7" id="check71" checked/>
+								<div class="img-carousel img-carousel1">
+									<div class="left1">
+										<label for="check74"><i class="fa fa-angle-left"></i></label>
+									</div>
+
+									<div class="carousel-content">
+										<p>Everydoby loves to shopping.</p>
+										<div class="techs-wrap">
+											<img class="img-carou" src="imgs/html5_icon.png" alt="HTML5 icon">
+											<img class="img-carou" src="imgs/css_icon.png" alt="CSS icon">
+											<img class="img-carou" src="imgs/js_icon.png" alt="JS icon">
+										</div>
+									</div>
+
+									<div class="right1">
+										<label for="check72"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port7" id="check72"/>
+								<div class="img-carousel img-carousel2">
+									<div class="left2">
+										<label for="check71"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<img src="imgs/cart_scr_1.png"  class="img-carou"/>
+									</div>
+									<div class="right2">
+										<label for="check73"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port7" id="check73"/>
+								<div class="img-carousel img-carousel3">
+									<div class="left3">
+										<label for="check72"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<img src="imgs/cart_scr_2.png"  class="img-carou"/>
+									</div>
+
+									<div class="right3">
+										<label for="check74"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<input type="radio" name="port7" id="check74"/>
+								<div class="img-carousel img-carousel4">
+									<div class="left2">
+										<label for="check73"><i class="fa fa-angle-left"></i></label>
+									</div>
+									<div class="carousel-content">
+										<div class="product-row">
+
+											<div class="product-wrap">
+												<div class="product">
+
+													<div class="product-img">
+														<img src="imgs/mini_ipad.jpeg" alt="Product">
+													</div>
+													<div class="product-info">
+														<h5>New Apple ipad mini</h5>
+
+														<p>$<span class="price">329.99</span></p>
+
+														<p>With Wi-Fi 32GB Bluetooth 4.0 White & Silver...</p>
+
+														</ul>
+													</div>
+												</div>
+
+												<div class="product-add">
+
+								                    <div class="product-add-inps">
+								                        <input class="product-qty" type="number" placeholder="Qty" value="0"><button class="button-add">Add to cart</button>
+								                    </div>
+													<p><a href="#" class="label-category">Electronics</a></p>
+												</div>
+											</div>
+
+											<div class="product-wrap">
+												<div class="product">
+
+													<div class="product-img">
+														<img src="imgs/bobba.jpg" alt="Product">
+													</div>
+													<div class="product-info">
+														<h5>New Star wars the Black Series</h5>
+
+								                        <p>$<span class="price">9.99</span></p>
+
+														<p>6" action Figure Boba Fett Gift (new in box)...</p>
+
+													</div>
+												</div>
+
+												<div class="product-add">
+
+								                    <div class="product-add-inps">
+								                        <input class="product-qty" type="number" placeholder="Qty" value="0"><button class="button-add">Add to cart</button>
+								                    </div>
+
+													<p><a href="#" class="label-category">Kids</a></p>
+								                </div>
+											</div>
+
+										</div>
+									</div>
+									<div class="right2">
+										<label for="check71"><i class="fa fa-angle-right"></i></label>
+									</div>
+								</div>
+
+								<ul class="carousel-ctrls">
+									<li class="tabs">
+										<label for="check71"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check72"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check73"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+									<li class="tabs">
+										<label for="check74"><i class="fa fa-circle-o-notch"></i></label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills">
+				<div class="skills-title">
+					<h1>Skills</h1>
+					<h4 class="subtitle">This are my skills, some may say that I have more, some I have less... but the truth is that I'm following the path to become a master on my area.</h4>
+				</div>
+				<!-- PROGRAMMING SKILLS -->
+				<div class="table-skills">
+					<div class="scale-dev">
+						<ul>
+							<li>Expert</li>
+							<li>Proficient</li>
+							<li>Competent</li>
+							<li>Learning</li>
+						</ul>
+					</div>
+					<div class="skills-dev">
+						<ul>
+							<li>
+								<span class="javascript red-bar"></span>
+							</li>
+							<li>
+								<span class="html-css blk-bar"></span>
+							</li>
+							<li>
+								<span class="jquery red-bar"></span>
+							</li>
+							<li>
+								<span class="php blk-bar"></span>
+							</li>
+							<li>
+								<span class="java red-bar"></span>
+							</li>
+							<li>
+								<span class="ruby blk-bar"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="table-labels dev-labels">
+						<p>js</p>
+						<p>html/css</p>
+						<p>jQuery</p>
+						<p>php</p>
+						<p>java</p>
+						<p>ruby</p>
+					</div>
+				</div>
+				<!-- /PROGRAMMING SKILLS -->
+				<!-- OTHER SKILLS -->
+				<div class="table-skills other-skills">
+					<div class="scale-dev">
+						<ul>
+							<li>Expert</li>
+							<li>Proficient</li>
+							<li>Competent</li>
+							<li>Learning</li>
+						</ul>
+					</div>
+					<div class="skills-dev">
+						<ul>
+							<li>
+								<span class="written red-bar-rnd"></span>
+							</li>
+							<li>
+								<span class="solving blk-bar-rnd"></span>
+							</li>
+							<li>
+								<span class="management red-bar-rnd"></span>
+							</li>
+							<li>
+								<span class="research blk-bar-rnd"></span>
+							</li>
+							<li>
+								<span class="speaking red-bar-rnd"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="table-labels skill-labels">
+						<p>written communication</p>
+						<p>problem solving</p>
+						<p>project management</p>
+						<p>problem research</p>
+						<p>public speaking</p>
+					</div>
+				</div>
+				<!-- /OTHER SKILLS -->
+			</section>
+
+			<section id="contact">
+				<div class="contact-title">
+					<h1>Contact</h1>
+					<h4 class="subtitle">Be free to contact me, if we don't wanna work out on a project, we could chat about anything. I like to hear people crazy ideas.</h4>
+				</div>
+				<div class="contact-body">
+					<label id="contact-card">
+						<input type="checkbox" class="card-input" />
+						<div class="card">
+							<div class="front">
+								<div class="card-title">
+									<h1>Luis Rojas</h1>
+									<i class="fa fa-retweet fa-2x"></i>
+									<h4>Js developer at Modern Developer</h4>
+								</div>
+								<div class="card-body">
+									<p>Mexican enthusiastic developer, trying to make the web more fun and useful for everybody. Becoming a social entrepeneur using js and apps to solve social problems.</p>
+									<ul>
+										<li>
+											lrojas_29@outlook.com
+										</li>
+										<li>
+											<a href="https://qa.moderndeveloper.com/users/luis_rojas">@luis_rojas</a>
+										</li>
+									</ul>
+								</div>
+								<div class="card-footer">
+									<div class="encyclopedia">
+										<img src="assets/enc1.png">
+										<p>Luis Rojas <br/> <span>on Encyclopedia.MD</span></p>
+									</div>
+									<div class="social">
+										<ul>
+											<li>
+												<a href="https://github.com/luisRojas29"><img src="assets/github2.png"></a>
+											</li>
+											<li>
+												<a href="https://www.facebook.com/kinopio.rojas"><img src="assets/facebook.png"></a>
+											</li>
+											<li>
+												<a href="https://twitter.com/kinopio_rojas"><img src="assets/twitter.png"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="back">
+							</div>
+						</div>
+					</label>
+				</div>
+			</section>
+			<footer>
+				<p>2016 - Luis Rojas</p>
+			</footer>
+			</div> <!-- container -->
+			<script src="js/calculator.js" ></script>
+            <script src="js/sideBar.js"></script>
+			<script src="js/smoothScroll.js"></script>
+			<script>
+				var menu_btns = document.getElementsByClassName("tgl-mnu");
+				var menu_tgl = document.getElementById("show-menu");
+
+				var prj_btns = document.getElementsByClassName("lbl-prj-mob");
+				var prj_chcks = document.getElementsByClassName("chk-prj-mob");
+				var prj_tgl = false;
+
+				for(var i=0; i<menu_btns.length; i++) {
+					menu_btns[i].addEventListener("click", function(e){
+						if( menu_tgl.checked ){
+							menu_tgl.checked = false;
+						}else{
+							menu_tgl.checked = true;
+						}
+					});
+				}
+
+				for(var j=0; j<prj_btns.length; j++) {
+					prj_btns[j].addEventListener("click", function(e){
+						console.log("entro");
+						var for_chck = this.getAttribute("for");
+						var elm_box = document.getElementById(for_chck);
+
+						if( elm_box.checked ) {
+							elm_box.checked = false;
+							elm_box.click();
+						}else{
+							elm_box.checked = true;
+							elm_box.click();
+						}
+
+						for(var ind=0; ind<prj_chcks.length; ind++){
+							console.log(prj_chcks[ind] + "---" + for_chck);
+							if( prj_chcks[ind].id !== for_chck) {
+								if( prj_chcks[ind].checked ){
+									prj_chcks[ind].click();
+									prj_chcks[ind].checked = false;
+								}
+							}
+						}
+
+					});
+				}
+			</script>
+
+		</body>
+	</html>
