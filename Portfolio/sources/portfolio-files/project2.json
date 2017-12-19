@@ -1,8 +1,8 @@
 {
-	"titulo": "Puzzle",
-	"descripcion" : "A very good combination to work with css and javascript, another BoV Academy workout...",
+	"titulo": "Safety",
+	"descripcion" : "This is a simple but very useful button that makes sure when you are submitting/accepting something. You just have to hold it by n seconds you configurate.",
 	"links":[
-		"https://luisrojas29.github.io/Portfolio/Puzzle.html"
+		"https://luisrojas29.github.io/Safety/"
 	],
 	"imgs":[
 		"/project2_1.png",

@@ -3,7 +3,9 @@
 
 	&--top {
 		@extend %u-full-wh;
-		background: $main-color;
+		//background: $main-color;
+		background: url('sources/imgs/plaza_armas.png');
+		background-size: 100% 100%;
 		transition: top 1.5s ease-in-out;
 	}
 

@@ -661,7 +661,7 @@ body {
   width: 1px; }
 
 .l-wrapper {
-  background: url("sources/imgs/my_land.png");
+  background: url("sources/imgs/torreon.png");
   background-size: 100% 100%;
   position: fixed; }
 
@@ -732,7 +732,8 @@ body {
 .c-louver {
   position: absolute; }
   .c-louver--top {
-    background: #ff5146;
+    background: url("sources/imgs/plaza_armas.png");
+    background-size: 100% 100%;
     transition: top 1.5s ease-in-out; }
   .c-louver--left {
     background: #ff5146;
@@ -768,8 +769,7 @@ body {
       text-align: center; }
 
 .c-social {
-  float: right;
-  text-align: center; }
+  margin-top: 3em; }
 
 .c-social__link {
   width: 60px;
