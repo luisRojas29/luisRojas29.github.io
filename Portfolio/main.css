@@ -861,6 +861,7 @@ body {
     border-bottom: 3px solid #555555; }
 
 .c-bio__content {
+  background: rgba(255, 81, 70, 0.7);
   color: #555555;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;

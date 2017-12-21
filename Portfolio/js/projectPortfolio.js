@@ -31,6 +31,8 @@ PrjPrt.prototype.renderHTML = function(){
 
 	let carousel = new Carousel(imgs);
 
+	prjCar.innerHTML="";
+
 	prjCar.appendChild(carousel.render());
 };
 
