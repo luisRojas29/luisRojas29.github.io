@@ -55,6 +55,8 @@ PrjPrt.prototype.loadData = function(ruta,dato, own){
 
 			own.imgs = datos.imgs;
 
+			own.renderHTML();
+
     	}else{
     		alert("There was a problem loading the portfolio projects, please try again.")
     	}
