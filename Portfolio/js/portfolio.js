@@ -41,8 +41,6 @@
 		let imgList = createPortfolioCarousel`<ol class="c-carousel__items js-carousel__items">${imgs.map(function(img){return './sources/imgs' + img; })}</ol>`;
 
 		prjCar.innerHTML = imgList;
-
-		console.log("Yo sali primero, portafolio");
 	}
 
 	function createPortfolioCarousel(tags, imagenes){

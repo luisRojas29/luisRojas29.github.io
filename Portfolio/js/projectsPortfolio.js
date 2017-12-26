@@ -10,3 +10,7 @@ ProjectsPortfolio.prototype.showProject = function(index){
 	let project = this.projects[index];
 	project.renderHTML();
 };
+
+ProjectsPortfolio.prototype.init = function(){
+	this.showProject(0);
+}

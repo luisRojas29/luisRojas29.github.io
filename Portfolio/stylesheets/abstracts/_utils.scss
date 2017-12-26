@@ -116,16 +116,15 @@
 
 .u-bold__shadow{
 	display: block;
-	font-size: 80px;
 	line-height: 80px;
 	letter-spacing: -4px;
 
-  &-red{
+  &-light{
     color: $main-color;
     text-shadow: 0 13.36px 8.896px darken($main-color, 5%),0 -2px 1px lighten($main-color, 15%);  
   }
 
-  &-white{
+  &-dark{
     color: $detail-color;
     text-shadow: 0 13.36px 8.896px darken($detail-color, 5%),0 -2px 1px lighten($detail-color, 15%);
   }
@@ -134,6 +133,12 @@
 .u-nice__shadow{
 	color: lighten($main-color, 10%);
 	text-shadow: 4px 4px 0 $main-color , 6px 6px 0 lighten($main-color, 40%);
+  letter-spacing: 5px;
+}
+
+.u-nice__shadow-dark{
+  color: lighten($detail-color, 10%);
+  text-shadow: 4px 4px 0 $detail-color , 6px 6px 0 lighten($detail-color, 40%);
   letter-spacing: 5px;
 }
 

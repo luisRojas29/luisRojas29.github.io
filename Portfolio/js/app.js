@@ -4,9 +4,10 @@
 
 	const coleccionPrjs = document.getElementsByClassName('js-show-project');
 
-	let listaPrj = new ProjectsPortfolio();
+	var listaPrj = new ProjectsPortfolio();
 
 	for (var i = 0; i < coleccionPrjs.length; i++) {
+
 		coleccionPrjs[i].dataset.projectid = i;
 
 		listaPrj.add( new PrjPrt( ruta, coleccionPrjs[i].dataset.project) );
