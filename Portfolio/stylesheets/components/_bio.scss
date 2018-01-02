@@ -24,9 +24,9 @@
 }
 
 .c-bio__content{
-	background: transparentize($main-color, 0.6);
+	background: transparentize($main-color, 0.2);
 	color: $bg-color;
-  	font-family: $main-font;
+  	font-family: $text-font;
   	font-size: 30px;
   	letter-spacing: 0.1em;
   	margin:0;

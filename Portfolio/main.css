@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Esteban|Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Bitter:700");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Tenor+Sans");
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -567,10 +568,10 @@ body {
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 .c-para {
-  font-family: "Esteban", serif; }
+  font-family: "Tenor Sans", sans-serif; }
 
 .c-title {
-  font-family: "Bitter", serif;
+  font-family: "Archivo Black", sans-serif;
   margin: 0;
   position: relative;
   text-align: center; }
@@ -589,12 +590,11 @@ body {
 
 .c-main-title {
   font-size: 48px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   margin: 14px; }
 
 .c-subtitle {
-  font-size: 26px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Tenor Sans", sans-serif;
   margin: 10px; }
 
 /**
@@ -670,7 +670,7 @@ body {
 .l-box {
   margin-top: 5%;
   margin-left: 10%;
-  width: 50%; }
+  width: 70%; }
 
 .l-sidebar {
   width: 25%;
@@ -761,7 +761,7 @@ body {
       text-align: center; }
 
 .c-social {
-  margin-top: 3em; }
+  margin-top: 2em; }
 
 .c-social__link {
   width: 60px;
@@ -831,6 +831,23 @@ body {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+.c-navigation {
+  background: rgba(42, 49, 50, 0.4);
+  position: absolute;
+  bottom: 1em;
+  color: #66A5AD;
+  text-align: center; }
+
+.c-navigation-menu {
+  margin: 0;
+  font-size: 12px;
+  padding: 8px;
+  vertical-align: top; }
+  .c-navigation-menu i {
+    font-size: 14px;
+    font-weight: bolder;
+    vertical-align: top; }
+
 .c-bio {
   margin: 3% auto;
   width: 45%; }
@@ -853,9 +870,9 @@ body {
     border-bottom: 3px solid #555555; }
 
 .c-bio__content {
-  background: rgba(102, 165, 173, 0.4);
+  background: rgba(102, 165, 173, 0.8);
   color: #2A3132;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Tenor Sans", sans-serif;
   font-size: 30px;
   letter-spacing: 0.1em;
   margin: 0;
@@ -867,6 +884,7 @@ body {
 .c-portfolio__description {
   background: #66A5AD;
   flex-grow: 1;
+  font-family: "Tenor Sans", sans-serif;
   padding: 14px 7px 0 7px;
   text-align: justify;
   width: 50%; }
@@ -877,7 +895,7 @@ body {
   width: 100%; }
 .c-portfolio__title {
   color: #66A5AD;
-  font-family: "Bitter", serif;
+  font-family: "Archivo Black", sans-serif;
   margin: 7px auto; }
 .c-portfolio__link {
   color: #07575b; }

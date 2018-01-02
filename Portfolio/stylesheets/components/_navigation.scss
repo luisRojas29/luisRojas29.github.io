@@ -1,0 +1,20 @@
+.c-navigation{
+	background: transparentize($bg-color, .6);
+	position: absolute;
+	bottom: 1em;
+	color: $main-color;
+	text-align: center;
+}
+
+.c-navigation-menu{
+	margin: 0;
+	font-size: 12px;
+	padding: 8px;
+	vertical-align: top;
+
+	i{
+		font-size: 14px;
+		font-weight: bolder;
+		vertical-align: top;
+	}
+}

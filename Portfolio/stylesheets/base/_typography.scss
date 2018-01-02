@@ -11,7 +11,7 @@ body {
 }
 
 .c-title{
-	font-family: $title-font;
+	font-family: $main-font;
   	margin:0;
   	position: relative;
 	text-align: center;
@@ -43,8 +43,6 @@ body {
 }
 
 .c-subtitle{
-	
-	font-size: 26px;
-	font-family: $main-font;
+	font-family: $text-font;
 	margin: 10px;
 }
