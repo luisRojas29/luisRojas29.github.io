@@ -8,6 +8,11 @@ body {
 
 .c-para{
 	font-family: $text-font;
+
+	@include mobile{
+		font-size: 8px;
+		color: red;
+	}
 }
 
 .c-title{

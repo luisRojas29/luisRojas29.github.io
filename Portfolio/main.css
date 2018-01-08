@@ -569,6 +569,10 @@ body {
 
 .c-para {
   font-family: "Tenor Sans", sans-serif; }
+  @media screen and (max-width: 479px) {
+    .c-para {
+      font-size: 8px;
+      color: red; } }
 
 .c-title {
   font-family: "Archivo Black", sans-serif;
