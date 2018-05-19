@@ -1,0 +1,84 @@
+{
+	"websiteTitle": "Luis Rojas Portfolio",
+	"description" : "Welcome to my portfolio.If you are here, it's because you want to know me, or want to work with me. Maybe you have an idea and needs to be programmed, maybe you are a developer and need a couple of hands for your next app... or maybe you are from HR and are checking about myself because I'm asking for a job... whatever the reason is, I wanna work with you, let's keep in touch and make awesome things.",
+	"sections": [
+		{
+			"sectionTitle":"About",
+			"subHeader":"This is about the developer...",
+			"specialLayout":"cover",
+			"descriptionText":"Description of the developer...",
+			"image": {
+				"location":"https://picsum.photos/200/?random",
+				"dimension":[200, 200], 
+				"positionOnScreen":"right"
+			}
+		},
+		{
+			"sectionTitle":"Projects",
+			"subHeader":"This is about the projects",
+			"specialLayout":"list",
+			"subSection":[
+				{
+					"id": 1,
+					"title": "Project #1",
+					"image": "https://picsum.photos/200/?random",
+					"description": "Project 1 description..."
+				},
+				{
+					"id": 2,
+					"title": "Project #2",
+					"image": "https://picsum.photos/200/?random",
+					"description": "Project 2 description..."
+				},
+				{
+					"id": 3,
+					"title": "Project #3",
+					"image": "https://picsum.photos/200/?random",
+					"description": "Project 3 description..."
+				}
+			],
+			"descriptionText":"Description of the projects",
+			"image": {
+				"location":"https://picsum.photos/200/?random",
+				"dimension":[200, 200], 
+				"positionOnScreen":"right"
+			}
+		},
+		{
+			"sectionTitle":"Skills",
+			"subHeader":"This is about the skills",
+			"specialLayout":"cover",
+			"descriptionText":"Description of the skills...",
+			"subSection":[
+				{
+					"id": 1,
+					"title": "Sub 1",
+					"image": "https://picsum.photos/200",
+					"description": "Description of subsection 1..."
+				},
+				{
+					"id": 2,
+					"title": "Sub 2",
+					"image": "https://picsum.photos/200/?random",
+					"description": "Description of subsection 2..."
+				}
+			],
+			"image": {
+				"location":"https://picsum.photos/200/?random",
+				"dimension":[200, 200], 
+				"positionOnScreen":"right"
+			}
+		},
+		{
+			"sectionTitle":"Contact",
+			"subHeader":"This is aboute the contact",
+			"specialLayout":"cover",
+			"descriptionText":"Description of the contact...",
+			"image": {
+				"location":"https://picsum.photos/200/?random",
+				"dimension":[200, 200], 
+				"positionOnScreen":"right"
+			}
+		}
+	]
+}

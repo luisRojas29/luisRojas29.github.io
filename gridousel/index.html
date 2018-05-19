@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/easing/EasePack.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
+	<title>
+		Web Slideshow
+	</title>
+</head>
+<body>
+
+	<div class="carousel">
+		<div class="carousel__display">
+		</div>
+
+		<div class="carousel__monitor">
+
+		</div>
+	</div>
+
+	<div class="slideshow">
+		
+	</div>
+	
+
+	<script type="text/javascript" src="js/gridousel.js"></script>
+	<script>
+
+		let grido = new Gridousel();
+	/*
+		let xhr = new XMLHttpRequest();
+
+		let prj = 'src/site.json';
+
+		let grilla = [];
+
+		let datos;
+
+		let slides;
+
+		let dotMonitor = document.getElementsByClassName('carousel__monitor')[0];
+
+		let carouselDisplay = document.getElementsByClassName('carousel__display')[0];
+
+		let prev = document.getElementsByClassName('carousel__control prev')[0];
+
+		let next = document.getElementsByClassName('carousel__control next')[0];
+
+		function createDots(arreglo){
+
+			let tmpl = ``;
+
+			let id = 1;
+
+			for( var i=0; i<arreglo.length; i++ ){
+				tmpl += `
+					<ul>
+				`;
+
+				for( var j=0; j<arreglo[i].length; j++ ){
+					tmpl+= `<li class="data-slide" data-slide="${i},${j}" data-id="${id}">&#9673;</li>`
+					id++;
+				}
+
+				tmpl+=`</ul>`;
+			}
+
+			dotMonitor.innerHTML = tmpl;
+
+			slides = document.getElementsByClassName("data-slide");
+
+			slides2 = Array.from( document.getElementsByClassName('data-slide') );
+
+			for(var x=0; x<slides.length; x++){
+				slides[x].addEventListener('click', function(e){
+					e.preventDefault();
+					focusDot(this.getAttribute('data-id'));
+					loadSlide(this.dataset.slide, this);
+				});
+			}
+
+			loadSection( datos.sections[0] );
+			focusDot(1);
+		}
+
+		function focusDot(elemento){
+
+			for (var i = 0; i < slides2.length; i++) {
+				slides2[i].classList.remove('on-dot');
+			}
+
+			slides2[elemento-1].classList.add('on-dot');
+		}
+
+		function loadSlide(elemento, el){
+
+			let ele = elemento.split(",");
+
+			if( ele[1] === '0' ){
+				loadSection( datos.sections[ ele[0] ] );
+			}else{
+				loadSubSection( datos.sections[ ele[0] ].subSection[ ele[1] - 1 ] );
+			}
+		}
+
+		function loadSection( datos ){
+
+			let tmpl = `
+					<h1>${datos.sectionTitle}</h1>
+					<h5>${datos.subHeader}</h5>
+					<div class="information">
+						<img class="image-section" src="${datos.image.location}" alt="placeholder+image">
+						<p>${datos.descriptionText}</p>
+					</div>
+			`;
+
+
+			carouselDisplay.innerHTML = tmpl;
+
+			imageStyle(datos);
+		}
+
+		function loadSubSection( datos ){
+
+			let tmpl = `
+					<h1>${datos.title}</h1>
+					<div class="information">
+						<img class="image-section" src="${datos.image}" alt="placeholder+image">
+						<p>${datos.description}</p>
+					</div>
+			`;
+
+			carouselDisplay.innerHTML = tmpl;
+		}
+
+		function imageStyle(datos){
+
+			let imagen = document.getElementsByClassName('image-section')[0];
+
+			imagen.style.width = datos.image.dimension[0] + "px";
+			imagen.style.height = datos.image.dimension[1] + "px";
+		}
+
+		xhr.onload = function (){
+			if (xhr.status === 200) {
+				
+				datos = JSON.parse(xhr.response);
+
+				for(var i=0 ; i<datos.sections.length; i++){
+
+					let tmpArry = [1];
+
+					if( datos.sections[i].hasOwnProperty('subSection') ){
+
+						for( var j=0; j<datos.sections[i].subSection.length; j++ ){
+							tmpArry.push(1);
+						}
+
+					}
+
+					grilla.push(tmpArry);
+				}
+			createDots(grilla);
+
+	    	}else{
+	    		alert("There was a problem loading the files, please try again later...")
+	    	}
+		}
+
+		xhr.open('GET', prj);
+		xhr.send();*/
+	</script>
+</body>
+</html>
